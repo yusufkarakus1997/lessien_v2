@@ -1,0 +1,33 @@
+lessien_wheel_odometry:
+  ros__parameters:
+    # Geometry: populated from lessien_description/config/geometry.yaml at launch.
+    # Declared defaults here are fallback to the confirmed values.
+    wheel_radius: 0.05035
+    track_width: 0.145
+
+    # Telemetry deadband (measured RPM, physical-forward-positive after correction).
+    # Stationary jitter on the DDSM115 encoder is typically +/-1 RPM; clamp to zero
+    # to prevent false motion integration while the robot is idle.
+    rpm_zero_threshold: 1.0
+
+    # Per-motor moving-average RPM filter window (samples).
+    # Order: raw RPM -> sign correction -> N-sample moving average -> rpm_zero_threshold
+    # Startup: do NOT wait for the window to fill; use the current sample count as divisor
+    # so the first sample contributes immediately.
+    # Minimum value is 1, which effectively disables the filter (identity pass-through).
+    rpm_filter_window: 5
+
+    # Maximum allowed dt for one integration step (seconds). Larger intervals are
+    # skipped to protect against large stale/accumulated jumps if the pipeline
+    # stalls or ROS wakes up late.
+    max_dt: 0.25
+
+    # Output topic frame conventions (REP-103).
+    odom_frame_id: "odom"
+    base_frame_id: "base_footprint"
+
+    # Input: Pico B measured RPM (raw sign; corrected internally).
+    rpm_topic: "/pico_b/motors/rpm"
+
+    # Output: wheel-encoder-only odometry (twist + integrated pose; NO tf publish).
+    odom_topic: "/wheel_odom"

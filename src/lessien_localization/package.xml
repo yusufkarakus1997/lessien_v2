@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lessien_localization</name><version>0.1.0</version>
+  <description>LESSIEN robot localization using robot_localization EKF (two_d_mode: wheel odom twist.linear.x + IMU yaw + IMU angular.z).</description>
+  <maintainer email="maintainer@example.com">LESSIEN maintainers</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- robot_localization ekf_node provides the executable; declare runtime dependency.
+       If robot_localization is not installed, building this package still succeeds
+       because we do not compile against it; launching ekf_node will fail at runtime
+       with a clear "package not found" error. -->
+  <exec_depend>robot_localization</exec_depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export><build_type>ament_cmake</build_type></export>
+</package>

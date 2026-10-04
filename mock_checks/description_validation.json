@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "controller_tag_present": false,
+  "static_tf": [
+    [
+      "lessien_mock/base_footprint",
+      "lessien_mock/base_link"
+    ]
+  ]
+}

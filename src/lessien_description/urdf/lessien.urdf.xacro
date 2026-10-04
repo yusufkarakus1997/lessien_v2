@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="lessien">
+  <!-- Shared defaults also work for direct Xacro invocation, relative to this file. -->
+  <xacro:property name="geometry" value="${xacro.load_yaml('../config/geometry.yaml')}"/>
+  <xacro:arg name="wheel_radius" default="${geometry['wheel_radius']}"/>
+  <xacro:arg name="body_length" default="${geometry['body_length']}"/>
+  <xacro:arg name="body_width" default="${geometry['body_width']}"/>
+  <xacro:arg name="body_height" default="${geometry['body_height']}"/>
+  <xacro:arg name="wheel_separation" default="${geometry['wheel_separation']}"/>
+  <xacro:arg name="wheelbase" default="${geometry['wheelbase']}"/>
+  <xacro:arg name="wheel_width" default="${geometry['wheel_width']}"/>
+  <xacro:arg name="body_ground_clearance" default="${geometry['body_ground_clearance']}"/>
+  <xacro:arg name="body_mass" default="${geometry['body_mass']}"/>
+  <xacro:arg name="wheel_mass" default="${geometry['wheel_mass']}"/>
+  <xacro:arg name="imu_mount_x" default="${geometry['imu_mount_x']}"/>
+  <xacro:arg name="imu_mount_y" default="${geometry['imu_mount_y']}"/>
+  <xacro:arg name="imu_mount_z" default="${geometry['imu_mount_z']}"/>
+  <xacro:arg name="imu_mount_roll" default="${geometry['imu_mount_roll']}"/>
+  <xacro:arg name="imu_mount_pitch" default="${geometry['imu_mount_pitch']}"/>
+  <xacro:arg name="imu_mount_yaw" default="${geometry['imu_mount_yaw']}"/>
+  <xacro:arg name="mock_control" default="false"/>
+  <xacro:property name="r" value="$(arg wheel_radius)"/>
+  <xacro:property name="w" value="$(arg wheel_width)"/>
+  <xacro:property name="l" value="$(arg body_length)"/>
+  <xacro:property name="b" value="$(arg body_width)"/>
+  <xacro:property name="h" value="$(arg body_height)"/>
+  <xacro:property name="track" value="$(arg wheel_separation)"/>
+  <xacro:property name="wb" value="$(arg wheelbase)"/>
+  <xacro:property name="m" value="$(arg body_mass)"/>
+  <xacro:property name="wm" value="$(arg wheel_mass)"/>
+  <xacro:property name="clearance" value="$(arg body_ground_clearance)"/>
+  <xacro:property name="imu_x" value="$(arg imu_mount_x)"/>
+  <xacro:property name="imu_y" value="$(arg imu_mount_y)"/>
+  <xacro:property name="imu_z" value="$(arg imu_mount_z)"/>
+  <xacro:property name="imu_roll" value="$(arg imu_mount_roll)"/>
+  <xacro:property name="imu_pitch" value="$(arg imu_mount_pitch)"/>
+  <xacro:property name="imu_yaw" value="$(arg imu_mount_yaw)"/>
+  <xacro:property name="base_z" value="${clearance + h/2}"/>
+  <material name="body_blue"><color rgba="0.12 0.35 0.65 1"/></material>
+  <material name="wheel_dark"><color rgba="0.12 0.12 0.12 1"/></material>
+  <!-- x forward, y left, z up. Footprint at ground plane; base at body center. -->
+  <link name="base_footprint"/>
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/><child link="base_link"/>
+    <origin xyz="0 0 ${base_z}"/>
+  </joint>
+  <link name="base_link">
+    <visual><geometry><box size="${l} ${b} ${h}"/></geometry><material name="body_blue"/></visual>
+    <collision><geometry><box size="${l} ${b} ${h}"/></geometry></collision>
+    <inertial><mass value="${m}"/><inertia ixx="${m*(b*b+h*h)/12}" ixy="0" ixz="0" iyy="${m*(l*l+h*h)/12}" iyz="0" izz="${m*(l*l+b*b)/12}"/></inertial>
+  </link>
+  <link name="imu_link"/>
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="${imu_x} ${imu_y} ${imu_z}" rpy="${imu_roll} ${imu_pitch} ${imu_yaw}"/>
+  </joint>
+  <xacro:macro name="wheel" params="name sx sy">
+    <link name="${name}_wheel_link">
+      <!-- Cylinder local z is rotated onto y; joint frame stays aligned to base. -->
+      <visual><origin rpy="${pi/2} 0 0"/><geometry><cylinder radius="${r}" length="${w}"/></geometry><material name="wheel_dark"/></visual>
+      <collision><origin rpy="${pi/2} 0 0"/><geometry><cylinder radius="${r}" length="${w}"/></geometry></collision>
+      <inertial><mass value="${wm}"/><inertia ixx="${wm*(3*r*r+w*w)/12}" ixy="0" ixz="0" iyy="${wm*r*r/2}" iyz="0" izz="${wm*(3*r*r+w*w)/12}"/></inertial>
+    </link>
+    <joint name="${name}_wheel_joint" type="continuous">
+      <parent link="base_link"/><child link="${name}_wheel_link"/>
+      <origin xyz="${sx*wb/2} ${sy*track/2} ${r-base_z}"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+  </xacro:macro>
+  <!-- Documentation mapping only: ID1 FL, ID2 RL, ID3 FR, ID4 RR. -->
+  <xacro:wheel name="front_left" sx="1" sy="1"/>
+  <xacro:wheel name="rear_left" sx="-1" sy="1"/>
+  <xacro:wheel name="front_right" sx="1" sy="-1"/>
+  <xacro:wheel name="rear_right" sx="-1" sy="-1"/>
+  <xacro:macro name="mock_joint" params="name">
+    <joint name="${name}_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"><param name="initial_value">0.0</param></state_interface>
+    </joint>
+  </xacro:macro>
+  <xacro:if value="$(arg mock_control)">
+    <ros2_control name="LessienMockSystem" type="system">
+      <hardware>
+        <plugin>mock_components/GenericSystem</plugin>
+        <param name="calculate_dynamics">true</param>
+      </hardware>
+      <xacro:mock_joint name="front_left"/><xacro:mock_joint name="rear_left"/>
+      <xacro:mock_joint name="front_right"/><xacro:mock_joint name="rear_right"/>
+    </ros2_control>
+  </xacro:if>
+</robot>

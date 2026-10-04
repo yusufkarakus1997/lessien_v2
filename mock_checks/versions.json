@@ -1,0 +1,8 @@
+{
+  "diff_drive_controller": "4.42.1",
+  "controller_manager": "4.48.0",
+  "hardware_interface": "4.48.0",
+  "joint_state_broadcaster": "4.42.1",
+  "robot_state_publisher": "3.3.4",
+  "xacro": "2.1.1"
+}

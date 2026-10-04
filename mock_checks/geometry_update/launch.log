@@ -1,0 +1,78 @@
+[INFO] [launch]: All log files can be found below /home/pi5/lessien_ws/mock_checks/geometry_update/ros_logs/2026-10-01-02-06-23-235072-pi5-raspbery-4451
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [4456]
+[INFO] [ros2_control_node-2]: process started with pid [4457]
+[INFO] [spawner-3]: process started with pid [4458]
+[robot_state_publisher-1] [INFO] [1790809583.460716240] [lessien_mock.robot_state_publisher]: Robot initialized
+[ros2_control_node-2] [INFO] [1790809583.473563279] [lessien_mock.controller_manager]: Using Steady (Monotonic) clock for triggering controller manager cycles.
+[ros2_control_node-2] [INFO] [1790809583.481906136] [lessien_mock.controller_manager]: Subscribing to '/lessien_mock/robot_description' topic for robot description.
+[ros2_control_node-2] [INFO] [1790809583.482046855] [lessien_mock.controller_manager]: update rate is 50 Hz
+[ros2_control_node-2] [INFO] [1790809583.482071021] [lessien_mock.controller_manager]: Overruns handling is : enabled
+[ros2_control_node-2] [INFO] [1790809583.482085354] [lessien_mock.controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[ros2_control_node-2] [WARN] [1790809583.482250536] [lessien_mock.controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[ros2_control_node-2] [INFO] [1790809583.793857345] [lessien_mock.controller_manager]: Received robot description from topic.
+[ros2_control_node-2] [INFO] [1790809583.793979602] [lessien_mock.controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[ros2_control_node-2] [INFO] [1790809583.797411583] [lessien_mock.controller_manager]: Loading hardware 'LessienMockSystem' 
+[ros2_control_node-2] [INFO] [1790809583.798153419] [lessien_mock.controller_manager]: Loaded hardware 'LessienMockSystem' from plugin 'mock_components/GenericSystem'
+[ros2_control_node-2] [INFO] [1790809583.798322304] [lessien_mock.controller_manager]: Initialize hardware 'LessienMockSystem' 
+[ros2_control_node-2] [INFO] [1790809583.810742870] [lessien_mock.controller_manager]: Successful initialization of hardware 'LessienMockSystem'
+[ros2_control_node-2] [INFO] [1790809583.811297599] [lessien_mock.controller_manager]: Activating component 'LessienMockSystem'.
+[ros2_control_node-2] [INFO] [1790809583.811365338] [resource_manager]: 'configure' hardware 'LessienMockSystem' 
+[ros2_control_node-2] [INFO] [1790809583.811401356] [resource_manager]: Successful 'configure' of hardware 'LessienMockSystem'
+[ros2_control_node-2] [INFO] [1790809583.811416282] [resource_manager]: 'activate' hardware 'LessienMockSystem' 
+[ros2_control_node-2] [INFO] [1790809583.811433281] [resource_manager]: Successful 'activate' of hardware 'LessienMockSystem'
+[ros2_control_node-2] [INFO] [1790809583.811686924] [lessien_mock.controller_manager]: Registering statistics for : LessienMockSystem
+[ros2_control_node-2] [INFO] [1790809583.811941678] [lessien_mock.controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[spawner-3] [INFO] [1790809584.048426539] [lessien_mock.spawner_joint_state_broadcaster]: waiting for service /lessien_mock/controller_manager/list_controllers to become available...
+[spawner-3] [INFO] [1790809584.306227719] [lessien_mock.spawner_joint_state_broadcaster]: Setting controller param "node_options_args" to "['-r', '/tf:=/lessien_mock/tf', '-r', '/tf_static:=/lessien_mock/tf_static']" for joint_state_broadcaster
+[spawner-3] [INFO] [1790809584.315578983] [lessien_mock.spawner_joint_state_broadcaster]: Setting controller param "params_file" to "['/tmp/lessien_mock_k9p3r8pm.yaml']" for joint_state_broadcaster
+[ros2_control_node-2] [INFO] [1790809584.322690127] [lessien_mock.controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[ros2_control_node-2] [INFO] [1790809584.322768459] [lessien_mock.controller_manager]: Loading controller 'joint_state_broadcaster'
+[ros2_control_node-2] [INFO] [1790809584.326813410] [lessien_mock.controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /tmp/lessien_mock_k9p3r8pm.yaml --params-file /tmp/lessien_mock_k9p3r8pm.yaml --ros-args -r /tf:=/lessien_mock/tf -r /tf_static:=/lessien_mock/tf_static 
+[spawner-3] [INFO] [1790809584.344732008] [lessien_mock.spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[ros2_control_node-2] [INFO] [1790809584.346577339] [lessien_mock.controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[ros2_control_node-2] [INFO] [1790809584.346833445] [lessien_mock.joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-3] [INFO] [1790809584.371501789] [lessien_mock.spawner_joint_state_broadcaster]: Setting controller param "node_options_args" to "['-r', '/tf:=/lessien_mock/tf', '-r', '/tf_static:=/lessien_mock/tf_static']" for diff_drive_controller
+[spawner-3] [INFO] [1790809584.382074137] [lessien_mock.spawner_joint_state_broadcaster]: Setting controller param "params_file" to "['/tmp/lessien_mock_k9p3r8pm.yaml']" for diff_drive_controller
+[ros2_control_node-2] [INFO] [1790809584.387883569] [lessien_mock.controller_manager]: Loading controller : 'diff_drive_controller' of type 'diff_drive_controller/DiffDriveController'
+[ros2_control_node-2] [INFO] [1790809584.387950123] [lessien_mock.controller_manager]: Loading controller 'diff_drive_controller'
+[ros2_control_node-2] [INFO] [1790809584.391079445] [lessien_mock.controller_manager]: Controller 'diff_drive_controller' node arguments: --ros-args --params-file /tmp/lessien_mock_k9p3r8pm.yaml --params-file /tmp/lessien_mock_k9p3r8pm.yaml --ros-args -r /tf:=/lessien_mock/tf -r /tf_static:=/lessien_mock/tf_static 
+[spawner-3] [INFO] [1790809584.424426140] [lessien_mock.spawner_joint_state_broadcaster]: Loaded diff_drive_controller
+[ros2_control_node-2] [INFO] [1790809584.424850539] [lessien_mock.controller_manager]: Configuring controller: 'diff_drive_controller'
+[ros2_control_node-2] [INFO] [1790809584.445130235] [lessien_mock.controller_manager]: Activating controllers: [ joint_state_broadcaster diff_drive_controller ]
+[ros2_control_node-2] [INFO] [1790809584.462837468] [lessien_mock.controller_manager]: Successfully switched controllers!
+[spawner-3] [INFO] [1790809584.484863072] [lessien_mock.spawner_joint_state_broadcaster]: Configured and activated all the parsed controllers list : ['joint_state_broadcaster', 'diff_drive_controller']!
+[INFO] [spawner-3]: process has finished cleanly [pid 4458]
+[ros2_control_node-2] [WARN] [1790809584.942567374] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[ros2_control_node-2] [WARN] [1790809585.942612282] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[ros2_control_node-2] [WARN] [1790809586.962606779] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[ros2_control_node-2] [WARN] [1790809587.962613262] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[ros2_control_node-2] [WARN] [1790809588.982574762] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[ros2_control_node-2] [WARN] [1790809590.002567917] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[ros2_control_node-2] [WARN] [1790809594.142606254] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [ros2_control_node-2]: sending signal 'SIGINT' to process[ros2_control_node-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1790809595.335864198] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ros2_control_node-2] [INFO] [1790809595.336126897] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ros2_control_node-2] [INFO] [1790809595.336245820] [lessien_mock.controller_manager]: Shutdown request received....
+[ros2_control_node-2] [INFO] [1790809595.336323800] [lessien_mock.controller_manager]: Shutting down all controllers in the controller manager.
+[ros2_control_node-2] [INFO] [1790809595.336358226] [lessien_mock.controller_manager]: Deactivating controller 'diff_drive_controller'
+[ros2_control_node-2] [INFO] [1790809595.336480279] [lessien_mock.controller_manager]: Shutting down controller 'diff_drive_controller'
+[ros2_control_node-2] [INFO] [1790809595.336732811] [lessien_mock.controller_manager]: Deactivating controller 'joint_state_broadcaster'
+[ros2_control_node-2] [INFO] [1790809595.336799902] [lessien_mock.controller_manager]: Shutting down controller 'joint_state_broadcaster'
+[ros2_control_node-2] [INFO] [1790809595.336893289] [resource_manager]: 'deactivate' hardware 'LessienMockSystem' 
+[ros2_control_node-2] [INFO] [1790809595.336926640] [resource_manager]: Successful 'deactivate' of hardware 'LessienMockSystem'
+[ros2_control_node-2] [INFO] [1790809595.336934659] [resource_manager]: 'shutdown' hardware 'LessienMockSystem' 
+[ros2_control_node-2] [INFO] [1790809595.336940566] [resource_manager]: Successful 'shutdown' of hardware 'LessienMockSystem'
+[ros2_control_node-2] [INFO] [1790809595.336995232] [lessien_mock.controller_manager]: Shutting down the controller manager.
+[ros2_control_node-2] [ERROR] [1790809595.337159340] [lessien_mock.controller_manager.pal_statistics]: Exception in publisher thread: context cannot be slept with because it's invalid!. Aborting!
+[ros2_control_node-2] [ERROR] [1790809595.337704847] [lessien_mock.controller_manager.pal_statistics]: Exception in publisher thread: context cannot be slept with because it's invalid!. Aborting!
+[ros2_control_node-2] [INFO] [1790809595.341190205] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-1] [INFO] [1790809595.341455441] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ros2_control_node-2] [INFO] [1790809595.343369903] [lessien_mock.controller_manager.pal_statistics]: Async messages lost 0
+[ros2_control_node-2] [INFO] [1790809595.343408347] [lessien_mock.controller_manager.pal_statistics]: publish_async_failures_ 0
+[ros2_control_node-2] [INFO] [1790809595.345421012] [lessien_mock.controller_manager.pal_statistics]: Async messages lost 0
+[ros2_control_node-2] [INFO] [1790809595.345452307] [lessien_mock.controller_manager.pal_statistics]: publish_async_failures_ 0
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 4456]
+[INFO] [ros2_control_node-2]: process has finished cleanly [pid 4457]

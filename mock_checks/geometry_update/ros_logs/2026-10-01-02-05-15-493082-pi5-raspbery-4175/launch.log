@@ -1,0 +1,11 @@
+1790809515.4948547 [INFO] [launch]: All log files can be found below /home/pi5/lessien_ws/mock_checks/geometry_update/ros_logs/2026-10-01-02-05-15-493082-pi5-raspbery-4175
+1790809515.4951079 [INFO] [launch]: Default logging verbosity is set to INFO
+1790809515.6892147 [INFO] [robot_state_publisher-1]: process started with pid [4179]
+1790809515.6895232 [INFO] [ros2_control_node-2]: process started with pid [4180]
+1790809515.6896541 [INFO] [spawner-3]: process started with pid [4181]
+1790809520.3243189 [INFO] [spawner-3]: process has finished cleanly [pid 4181]
+1790809523.0001318 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1790809523.0028706 [INFO] [ros2_control_node-2]: sending signal 'SIGINT' to process[ros2_control_node-2]
+1790809523.0037687 [INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+1790809523.1188781 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 4179]
+1790809523.1499605 [INFO] [ros2_control_node-2]: process has finished cleanly [pid 4180]

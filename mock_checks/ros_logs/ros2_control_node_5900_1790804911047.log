@@ -1,0 +1,82 @@
+[INFO] [1790804911.201762716] [lessien_mock.controller_manager]: Using Steady (Monotonic) clock for triggering controller manager cycles.
+[INFO] [1790804911.231116730] [lessien_mock.controller_manager]: Subscribing to '/lessien_mock/robot_description' topic for robot description.
+[INFO] [1790804911.231271857] [lessien_mock.controller_manager]: update rate is 50 Hz
+[INFO] [1790804911.231299856] [lessien_mock.controller_manager]: Overruns handling is : enabled
+[INFO] [1790804911.231317930] [lessien_mock.controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[WARN] [1790804911.232275502] [lessien_mock.controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[INFO] [1790804911.359821415] [lessien_mock.controller_manager]: Received robot description from topic.
+[INFO] [1790804911.359936542] [lessien_mock.controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[INFO] [1790804911.363551001] [lessien_mock.controller_manager]: Loading hardware 'LessienMockSystem' 
+[INFO] [1790804911.367091054] [lessien_mock.controller_manager]: Loaded hardware 'LessienMockSystem' from plugin 'mock_components/GenericSystem'
+[INFO] [1790804911.367314345] [lessien_mock.controller_manager]: Initialize hardware 'LessienMockSystem' 
+[INFO] [1790804911.381460818] [lessien_mock.controller_manager]: Successful initialization of hardware 'LessienMockSystem'
+[INFO] [1790804911.381888420] [lessien_mock.controller_manager]: Activating component 'LessienMockSystem'.
+[INFO] [1790804911.382023435] [resource_manager]: 'configure' hardware 'LessienMockSystem' 
+[INFO] [1790804911.382047194] [resource_manager]: Successful 'configure' of hardware 'LessienMockSystem'
+[INFO] [1790804911.382058935] [resource_manager]: 'activate' hardware 'LessienMockSystem' 
+[INFO] [1790804911.382084045] [resource_manager]: Successful 'activate' of hardware 'LessienMockSystem'
+[INFO] [1790804911.382202302] [lessien_mock.controller_manager]: Registering statistics for : LessienMockSystem
+[INFO] [1790804911.383234965] [lessien_mock.controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[INFO] [1790804911.871887100] [lessien_mock.controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[INFO] [1790804911.871948525] [lessien_mock.controller_manager]: Loading controller 'joint_state_broadcaster'
+[WARN] [1790804911.894030048] [lessien_mock.controller_manager]: The use of remapping arguments to the controller_manager node is deprecated. Please use the '--controller-ros-args' argument of the spawner to pass remapping arguments to the controller node.
+[INFO] [1790804911.894110046] [lessien_mock.controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /tmp/lessien_mock_9ticmemi.yaml -r /tf:=/lessien_mock/tf -r /tf_static:=/lessien_mock/tf_static --params-file /tmp/lessien_mock_9ticmemi.yaml --ros-args -r /tf:=/lessien_mock/tf -r /tf_static:=/lessien_mock/tf_static 
+[INFO] [1790804911.916691985] [lessien_mock.controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[INFO] [1790804911.916961961] [lessien_mock.joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[INFO] [1790804911.979460963] [lessien_mock.controller_manager]: Loading controller : 'diff_drive_controller' of type 'diff_drive_controller/DiffDriveController'
+[INFO] [1790804911.979533943] [lessien_mock.controller_manager]: Loading controller 'diff_drive_controller'
+[WARN] [1790804911.998509033] [lessien_mock.controller_manager]: The use of remapping arguments to the controller_manager node is deprecated. Please use the '--controller-ros-args' argument of the spawner to pass remapping arguments to the controller node.
+[INFO] [1790804911.998586161] [lessien_mock.controller_manager]: Controller 'diff_drive_controller' node arguments: --ros-args --params-file /tmp/lessien_mock_9ticmemi.yaml -r /tf:=/lessien_mock/tf -r /tf_static:=/lessien_mock/tf_static --params-file /tmp/lessien_mock_9ticmemi.yaml --ros-args -r /tf:=/lessien_mock/tf -r /tf_static:=/lessien_mock/tf_static 
+[INFO] [1790804912.034911951] [lessien_mock.controller_manager]: Configuring controller: 'diff_drive_controller'
+[INFO] [1790804912.055333381] [lessien_mock.controller_manager]: Activating controllers: [ joint_state_broadcaster diff_drive_controller ]
+[INFO] [1790804912.072925742] [lessien_mock.controller_manager]: Successfully switched controllers!
+[WARN] [1790804912.552643070] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804913.552646129] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804914.572652330] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804915.592640865] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804916.592649276] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804917.592650501] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804918.612638981] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804919.632638108] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804920.632651445] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804921.632693669] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804922.652670482] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804923.672662647] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804924.692664959] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804928.732669776] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804929.992668074] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804931.012637683] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804932.012641298] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804933.032639888] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804934.032641780] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804935.052641111] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804936.052645244] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804937.072640686] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804938.092641610] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804939.112639237] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804940.112649815] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804941.132660849] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804942.152651088] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804943.172657881] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804944.172661033] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804945.172666703] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804946.192649960] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804947.192657630] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804948.212647480] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804949.212647687] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804950.232648851] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804951.232654521] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804952.252638445] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[WARN] [1790804953.252654782] [lessien_mock.diff_drive_controller]: Velocity command timed out. Braking.
+[INFO] [1790804953.929443115] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1790804953.929559464] [lessien_mock.controller_manager]: Shutdown request received....
+[INFO] [1790804953.929643944] [lessien_mock.controller_manager]: Shutting down all controllers in the controller manager.
+[INFO] [1790804953.929680591] [lessien_mock.controller_manager]: Deactivating controller 'diff_drive_controller'
+[INFO] [1790804953.929787830] [lessien_mock.controller_manager]: Shutting down controller 'diff_drive_controller'
+[INFO] [1790804953.930003936] [lessien_mock.controller_manager]: Deactivating controller 'joint_state_broadcaster'
+[INFO] [1790804953.930072305] [lessien_mock.controller_manager]: Shutting down controller 'joint_state_broadcaster'
+[INFO] [1790804953.930154599] [resource_manager]: 'deactivate' hardware 'LessienMockSystem' 
+[INFO] [1790804953.930183803] [resource_manager]: Successful 'deactivate' of hardware 'LessienMockSystem'
+[INFO] [1790804953.930191173] [resource_manager]: 'shutdown' hardware 'LessienMockSystem' 
+[INFO] [1790804953.930197321] [resource_manager]: Successful 'shutdown' of hardware 'LessienMockSystem'
+[INFO] [1790804953.930245394] [lessien_mock.controller_manager]: Shutting down the controller manager.

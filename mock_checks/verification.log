@@ -1,0 +1,89 @@
+{
+  "scope": "MOCK ONLY; not hardware validation",
+  "domain": 77,
+  "hardware_plugin": "mock_components/GenericSystem",
+  "controllers": {
+    "diff_drive_controller": "active",
+    "joint_state_broadcaster": "active"
+  },
+  "command_interfaces": [
+    "diff_drive_controller/angular/velocity",
+    "diff_drive_controller/linear/velocity",
+    "front_left_wheel_joint/velocity",
+    "front_right_wheel_joint/velocity",
+    "rear_left_wheel_joint/velocity",
+    "rear_right_wheel_joint/velocity"
+  ],
+  "state_interfaces": [
+    "front_left_wheel_joint/position",
+    "front_left_wheel_joint/velocity",
+    "front_right_wheel_joint/position",
+    "front_right_wheel_joint/velocity",
+    "rear_left_wheel_joint/position",
+    "rear_left_wheel_joint/velocity",
+    "rear_right_wheel_joint/position",
+    "rear_right_wheel_joint/velocity"
+  ],
+  "parameters": {
+    "wheel_radius": 0.05035,
+    "wheel_separation": 0.24,
+    "position_feedback": false,
+    "open_loop": false,
+    "cmd_vel_timeout": 0.5
+  },
+  "command_topic": "/lessien_mock/diff_drive_controller/cmd_vel",
+  "command_type": "geometry_msgs/msg/TwistStamped",
+  "forward": {
+    "result": "PASS",
+    "expected_rad_s": [
+      1.9860973187686197,
+      1.9860973187686197,
+      1.9860973187686197,
+      1.9860973187686197
+    ],
+    "observed_rad_s": {
+      "front_left_wheel_joint": 1.9860973187686197,
+      "front_right_wheel_joint": 1.9860973187686197,
+      "rear_left_wheel_joint": 1.9860973187686197,
+      "rear_right_wheel_joint": 1.9860973187686197
+    },
+    "joint_samples": 43,
+    "odom_samples": 42
+  },
+  "turn_left_in_place": {
+    "result": "PASS",
+    "expected_rad_s": [
+      -1.1916583912611718,
+      -1.1916583912611718,
+      1.1916583912611718,
+      1.1916583912611718
+    ],
+    "observed_rad_s": {
+      "front_left_wheel_joint": -1.1916583912611718,
+      "front_right_wheel_joint": 1.1916583912611718,
+      "rear_left_wheel_joint": -1.1916583912611718,
+      "rear_right_wheel_joint": 1.1916583912611718
+    },
+    "joint_samples": 42,
+    "odom_samples": 42
+  },
+  "command_timeout": {
+    "result": "PASS",
+    "configured_s": 0.5,
+    "observed_stop_after_last_publish_s": 0.5399904529999731
+  },
+  "tf": {
+    "result": "PASS",
+    "edges": {
+      "lessien_mock/base_footprint": "lessien_mock/odom",
+      "lessien_mock/base_link": "lessien_mock/base_footprint",
+      "lessien_mock/front_left_wheel_link": "lessien_mock/base_link",
+      "lessien_mock/rear_left_wheel_link": "lessien_mock/base_link",
+      "lessien_mock/front_right_wheel_link": "lessien_mock/base_link",
+      "lessien_mock/rear_right_wheel_link": "lessien_mock/base_link"
+    },
+    "checks": "geometry translations, ground contact, +Y rotation agrees with joint positions"
+  },
+  "real_cmd_vel_publishers_in_test_domain": 0,
+  "result": "PASS"
+}

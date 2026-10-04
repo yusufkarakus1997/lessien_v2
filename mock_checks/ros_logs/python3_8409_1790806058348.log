@@ -1,0 +1,8 @@
+[INFO] [1790806058.467796764] [lessien_mock.spawner_joint_state_broadcaster]: waiting for service /lessien_mock/controller_manager/list_controllers to become available...
+[INFO] [1790806058.725972382] [lessien_mock.spawner_joint_state_broadcaster]: Setting controller param "node_options_args" to "['-r', '/tf:=/lessien_mock/tf', '-r', '/tf_static:=/lessien_mock/tf_static']" for joint_state_broadcaster
+[INFO] [1790806058.736456737] [lessien_mock.spawner_joint_state_broadcaster]: Setting controller param "params_file" to "['/tmp/lessien_mock_8fbzlrc9.yaml']" for joint_state_broadcaster
+[INFO] [1790806058.779365825] [lessien_mock.spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[INFO] [1790806058.806426971] [lessien_mock.spawner_joint_state_broadcaster]: Setting controller param "node_options_args" to "['-r', '/tf:=/lessien_mock/tf', '-r', '/tf_static:=/lessien_mock/tf_static']" for diff_drive_controller
+[INFO] [1790806058.817128701] [lessien_mock.spawner_joint_state_broadcaster]: Setting controller param "params_file" to "['/tmp/lessien_mock_8fbzlrc9.yaml']" for diff_drive_controller
+[INFO] [1790806058.859143216] [lessien_mock.spawner_joint_state_broadcaster]: Loaded diff_drive_controller
+[INFO] [1790806058.919519797] [lessien_mock.spawner_joint_state_broadcaster]: Configured and activated all the parsed controllers list : ['joint_state_broadcaster', 'diff_drive_controller']!

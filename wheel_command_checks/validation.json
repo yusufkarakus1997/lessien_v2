@@ -1,0 +1,18 @@
+{
+  "result": "PASS_OFFLINE_ONLY",
+  "source_message_sha256": "cb0405a45866b3cc63c502e0e726fe0fb00bdeaa425f7eb4874accd595472d6b",
+  "readme_sha256": "edcbea8b530a7dee529298f1392c489ecb3881ab9d16dc3b23449251a0be2538",
+  "firmware_source_sha256": "bc93062c2434f837aa35638d3c53284a2bb75e402fb98b170b43e0694058b5ee",
+  "offline_messages": 60,
+  "cdr_bytes": 60,
+  "protocol_version": 1,
+  "real_pico_publish": false,
+  "dds_node_created": false,
+  "firmware_flag_changed": false,
+  "limitations": [
+    "No physical Pico execution",
+    "No measured 20 Hz DDS timing",
+    "No deployed firmware provenance verification",
+    "MCU typesupport binary not supplied; canonical message equality established by README SHA256"
+  ]
+}

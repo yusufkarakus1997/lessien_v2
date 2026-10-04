@@ -1,0 +1,314 @@
+{
+  "receive_only_result": "PASS",
+  "totals": {
+    "phase_count": 32,
+    "sent_messages": 12000,
+    "diagnostic_messages": 1382,
+    "rpm_samples": 13825,
+    "rpm_rate_hz": 19.998987811442998,
+    "rpm_max_gap_ms": 94.105988,
+    "rpm_counts_by_motor": [
+      {
+        "0": 13768,
+        "-1": 57
+      },
+      {
+        "0": 13807,
+        "-1": 18
+      },
+      {
+        "0": 13810,
+        "-1": 15
+      },
+      {
+        "0": 13812,
+        "-1": 13
+      }
+    ],
+    "rpm_all_zero": false,
+    "motor_summary_samples": 55,
+    "command_rpm_values": [
+      "0"
+    ],
+    "source_trusted_values": [
+      "false"
+    ],
+    "command_fresh_values": [
+      "false"
+    ],
+    "final_freshness": {
+      "name": "pico_b/wheel_freshness",
+      "level": 1,
+      "message": "LOCAL_TIMEOUT",
+      "values": {
+        "localAgeMs": "29020",
+        "sourceAgeMs": "0",
+        "localFresh": "false",
+        "sourceTrusted": "false",
+        "rejectCount": "5600",
+        "acceptedCount": "6400"
+      },
+      "t": 5343471584593
+    },
+    "online_masks": [
+      "0x0F"
+    ],
+    "fault_masks": [
+      "0x00"
+    ],
+    "micro_ros_first": {
+      "name": "pico_b/micro_ros",
+      "level": 0,
+      "message": "OK",
+      "values": {
+        "agentState": "RUNNING",
+        "heartbeatPublishError": "0",
+        "telemetryPublishError": "0",
+        "diagnosticPublishError": "0",
+        "reconnectCount": "0",
+        "bootStage": "B3A"
+      },
+      "t": 4669938941231
+    },
+    "micro_ros_last": {
+      "name": "pico_b/micro_ros",
+      "level": 0,
+      "message": "OK",
+      "values": {
+        "agentState": "RUNNING",
+        "heartbeatPublishError": "0",
+        "telemetryPublishError": "0",
+        "diagnosticPublishError": "0",
+        "reconnectCount": "0",
+        "bootStage": "B3A"
+      },
+      "t": 5344973626352
+    }
+  },
+  "phase_results": [
+    {
+      "index": 0,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 1,
+      "phase": "stale",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 2,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 3,
+      "phase": "duplicate",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 4,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 5,
+      "phase": "old",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 6,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 7,
+      "phase": "nan",
+      "wheel_index": 0,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 8,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 9,
+      "phase": "nan",
+      "wheel_index": 1,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 10,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 11,
+      "phase": "nan",
+      "wheel_index": 2,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 12,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 13,
+      "phase": "nan",
+      "wheel_index": 3,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 14,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 15,
+      "phase": "inf",
+      "wheel_index": 0,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 16,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 17,
+      "phase": "inf",
+      "wheel_index": 1,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 18,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 19,
+      "phase": "inf",
+      "wheel_index": 2,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 20,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 21,
+      "phase": "inf",
+      "wheel_index": 3,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 22,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 23,
+      "phase": "neg-inf",
+      "wheel_index": 0,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 24,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 25,
+      "phase": "neg-inf",
+      "wheel_index": 1,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 26,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 27,
+      "phase": "neg-inf",
+      "wheel_index": 2,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 28,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 29,
+      "phase": "neg-inf",
+      "wheel_index": 3,
+      "result": "PASS",
+      "freshness_samples": 2
+    },
+    {
+      "index": 30,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 1
+    },
+    {
+      "index": 31,
+      "phase": "stale",
+      "wheel_index": null,
+      "result": "PASS",
+      "freshness_samples": 3
+    }
+  ]
+}

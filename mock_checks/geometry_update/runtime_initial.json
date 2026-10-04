@@ -1,0 +1,36 @@
+{
+  "scope": "MOCK ONLY; not hardware validation",
+  "domain": 77,
+  "hardware_plugin": "mock_components/GenericSystem",
+  "controllers": {
+    "diff_drive_controller": "active",
+    "joint_state_broadcaster": "active"
+  },
+  "command_interfaces": [
+    "diff_drive_controller/angular/velocity",
+    "diff_drive_controller/linear/velocity",
+    "front_left_wheel_joint/velocity",
+    "front_right_wheel_joint/velocity",
+    "rear_left_wheel_joint/velocity",
+    "rear_right_wheel_joint/velocity"
+  ],
+  "state_interfaces": [
+    "front_left_wheel_joint/position",
+    "front_left_wheel_joint/velocity",
+    "front_right_wheel_joint/position",
+    "front_right_wheel_joint/velocity",
+    "rear_left_wheel_joint/position",
+    "rear_left_wheel_joint/velocity",
+    "rear_right_wheel_joint/position",
+    "rear_right_wheel_joint/velocity"
+  ],
+  "parameters": {
+    "wheel_radius": 0.05035,
+    "wheel_separation": 0.145,
+    "position_feedback": false,
+    "open_loop": false,
+    "cmd_vel_timeout": 0.5
+  },
+  "result": "FAIL",
+  "error": "AssertionError()"
+}

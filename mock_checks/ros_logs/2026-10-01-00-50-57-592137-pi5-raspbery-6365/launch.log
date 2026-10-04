@@ -1,0 +1,11 @@
+1790805057.5936344 [INFO] [launch]: All log files can be found below /home/pi5/lessien_ws/mock_checks/ros_logs/2026-10-01-00-50-57-592137-pi5-raspbery-6365
+1790805057.5938594 [INFO] [launch]: Default logging verbosity is set to INFO
+1790805057.7498932 [INFO] [robot_state_publisher-1]: process started with pid [6368]
+1790805057.7502317 [INFO] [ros2_control_node-2]: process started with pid [6369]
+1790805057.7503712 [INFO] [spawner-3]: process started with pid [6370]
+1790805058.8416824 [INFO] [spawner-3]: process has finished cleanly [pid 6370]
+1790805125.8202753 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1790805125.8225329 [INFO] [ros2_control_node-2]: sending signal 'SIGINT' to process[ros2_control_node-2]
+1790805125.8231680 [INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+1790805125.9395938 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 6368]
+1790805125.9632242 [INFO] [ros2_control_node-2]: process has finished cleanly [pid 6369]

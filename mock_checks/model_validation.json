@@ -1,0 +1,22 @@
+[
+  {
+    "geometry": "default",
+    "mock_control": "false",
+    "result": "PASS"
+  },
+  {
+    "geometry": "default",
+    "mock_control": "true",
+    "result": "PASS"
+  },
+  {
+    "geometry": "alternate_unverified",
+    "mock_control": "false",
+    "result": "PASS"
+  },
+  {
+    "geometry": "alternate_unverified",
+    "mock_control": "true",
+    "result": "PASS"
+  }
+]

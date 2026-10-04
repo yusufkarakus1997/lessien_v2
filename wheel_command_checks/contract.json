@@ -1,0 +1,35 @@
+{
+  "ready_for_live_test": true,
+  "reason": "Source contract verified; live execution has NOT been authorized or performed in this task.",
+  "message_sha256": "cb0405a45866b3cc63c502e0e726fe0fb00bdeaa425f7eb4874accd595472d6b",
+  "topic": "/pico_b/wheel_commands",
+  "protocol_version": 1,
+  "source_time_mapping_verified": false,
+  "local_timeout_ms": 250,
+  "firmware_readme_sha256": "edcbea8b530a7dee529298f1392c489ecb3881ab9d16dc3b23449251a0be2538",
+  "firmware_source_sha256": "bc93062c2434f837aa35638d3c53284a2bb75e402fb98b170b43e0694058b5ee",
+  "qos": {
+    "reliability": "BEST_EFFORT",
+    "durability": "VOLATILE",
+    "history": "KEEP_LAST",
+    "depth": 1
+  },
+  "diagnostics": {
+    "pico_b/wheel_command": [
+      "flRadS",
+      "rlRadS",
+      "frRadS",
+      "rrRadS",
+      "sequence",
+      "commandFresh"
+    ],
+    "pico_b/wheel_freshness": [
+      "localAgeMs",
+      "sourceAgeMs",
+      "localFresh",
+      "sourceTrusted",
+      "rejectCount",
+      "acceptedCount"
+    ]
+  }
+}

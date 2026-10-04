@@ -1,0 +1,8 @@
+[INFO] [launch]: All log files can be found below /home/pi5/lessien_ws/mock_checks/ros_logs/2026-10-01-00-52-29-577578-pi5-raspbery-6871
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [6885]
+[robot_state_publisher-1] [INFO] [1790805149.768701229] [lessien_mock.robot_state_publisher]: Robot initialized
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1790805149.956732929] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 6885]

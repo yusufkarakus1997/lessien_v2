@@ -1,0 +1,2389 @@
+{
+  "scope": "receive-only; sparse diagnostics; not hardware driving PASS",
+  "phases": [
+    {
+      "index": 0,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 20.000079129135123,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 4,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "5",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "0",
+            "acceptedCount": "201"
+          },
+          "t": 4705942437326
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "290",
+            "commandFresh": "false"
+          },
+          "t": 4705439523941
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "phase": "stale",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "no_messages_sent": true,
+        "local_age_at_least_250": true
+      },
+      "publish_samples": 0,
+      "publish_rate_hz": null,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 400,
+      "rpm_nonzero_samples": 6,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "LOCAL_TIMEOUT",
+          "values": {
+            "localAgeMs": "2555",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "0",
+            "acceptedCount": "400"
+          },
+          "t": 4718441125631
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "LOCAL_TIMEOUT",
+          "values": {
+            "localAgeMs": "15055",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "0",
+            "acceptedCount": "400"
+          },
+          "t": 4730943728378
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "499",
+            "commandFresh": "false"
+          },
+          "t": 4717942964601
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "499",
+            "commandFresh": "false"
+          },
+          "t": 4730441548548
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 20.00002389276037,
+      "freshness_samples": 1,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 13,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "6",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "0",
+            "acceptedCount": "552"
+          },
+          "t": 4743444033048
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "641",
+            "commandFresh": "false"
+          },
+          "t": 4742944026899
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "891",
+            "commandFresh": "false"
+          },
+          "t": 4755443510968
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "phase": "duplicate",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99994167936806,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 1,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "SEQUENCE",
+          "values": {
+            "localAgeMs": "12603",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "253",
+            "acceptedCount": "800"
+          },
+          "t": 4768443931137
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "899",
+            "commandFresh": "false"
+          },
+          "t": 4767946115589
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999947812667504,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 1,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "8",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "400",
+            "acceptedCount": "904"
+          },
+          "t": 4780947438140
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "9",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "400",
+            "acceptedCount": "1154"
+          },
+          "t": 4793445022224
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "993",
+            "commandFresh": "false"
+          },
+          "t": 4780445359984
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "1243",
+            "commandFresh": "false"
+          },
+          "t": 4792947801280
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "phase": "old",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999919852952758,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 4,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "SEQUENCE",
+          "values": {
+            "localAgeMs": "10209",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "605",
+            "acceptedCount": "1200"
+          },
+          "t": 4805948294813
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "1299",
+            "commandFresh": "false"
+          },
+          "t": 4805448229806
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999870498081652,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 0,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "10",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "800",
+            "acceptedCount": "1256"
+          },
+          "t": 4818448700863
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "11",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "800",
+            "acceptedCount": "1506"
+          },
+          "t": 4830952147901
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "1345",
+            "commandFresh": "false"
+          },
+          "t": 4817947842331
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "1595",
+            "commandFresh": "false"
+          },
+          "t": 4830449022931
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "phase": "nan",
+      "wheel_index": 0,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999920500566635,
+      "freshness_samples": 1,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 2,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "7811",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "957",
+            "acceptedCount": "1600"
+          },
+          "t": 4843450497100
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "1699",
+            "commandFresh": "false"
+          },
+          "t": 4842950584643
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "1699",
+            "commandFresh": "false"
+          },
+          "t": 4855449809343
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999753633110057,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 0,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "12",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "1200",
+            "acceptedCount": "1858"
+          },
+          "t": 4868452181848
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "2347",
+            "commandFresh": "false"
+          },
+          "t": 4867952148694
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "phase": "nan",
+      "wheel_index": 1,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999583735982263,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 6,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "5413",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "1309",
+            "acceptedCount": "2000"
+          },
+          "t": 4880953614978
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "17913",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "1559",
+            "acceptedCount": "2000"
+          },
+          "t": 4893452966883
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "2499",
+            "commandFresh": "false"
+          },
+          "t": 4880451457434
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "2499",
+            "commandFresh": "false"
+          },
+          "t": 4892954089654
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 20.000254177666363,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 8,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "12",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "1600",
+            "acceptedCount": "2210"
+          },
+          "t": 4905955490019
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "3099",
+            "commandFresh": "false"
+          },
+          "t": 4905452230223
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "phase": "nan",
+      "wheel_index": 2,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99984518515829,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 10,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "3013",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "1661",
+            "acceptedCount": "2400"
+          },
+          "t": 4918455568911
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "15513",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "1911",
+            "acceptedCount": "2400"
+          },
+          "t": 4930956600726
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "3299",
+            "commandFresh": "false"
+          },
+          "t": 4917956501109
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "3299",
+            "commandFresh": "false"
+          },
+          "t": 4930453743591
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999808288554473,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 1,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "13",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "2000",
+            "acceptedCount": "2562"
+          },
+          "t": 4943455453315
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "3851",
+            "commandFresh": "false"
+          },
+          "t": 4942957327962
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "phase": "nan",
+      "wheel_index": 3,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 20.00000333934893,
+      "freshness_samples": 2,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 3,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "603",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "2013",
+            "acceptedCount": "2800"
+          },
+          "t": 4955957363008
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "13103",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "2263",
+            "acceptedCount": "2800"
+          },
+          "t": 4968456492382
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "4099",
+            "commandFresh": "false"
+          },
+          "t": 4967958526075
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99993966133492,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 0,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "15",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "2400",
+            "acceptedCount": "2914"
+          },
+          "t": 4980959731745
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "15",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "2400",
+            "acceptedCount": "3164"
+          },
+          "t": 4993458021374
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "4603",
+            "commandFresh": "false"
+          },
+          "t": 4980456837962
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "4853",
+            "commandFresh": "false"
+          },
+          "t": 4992960039261
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "phase": "inf",
+      "wheel_index": 0,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99988743121003,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 2,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "10715",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "2615",
+            "acceptedCount": "3200"
+          },
+          "t": 5005959209915
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "4899",
+            "commandFresh": "false"
+          },
+          "t": 5005459071617
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99992218075392,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 2,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "15",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "2800",
+            "acceptedCount": "3266"
+          },
+          "t": 5018458413902
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "16",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "2800",
+            "acceptedCount": "3516"
+          },
+          "t": 5030961519974
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "5355",
+            "commandFresh": "false"
+          },
+          "t": 5017962271035
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "5605",
+            "commandFresh": "false"
+          },
+          "t": 5030459596825
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "phase": "inf",
+      "wheel_index": 1,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999933767637884,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 0,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "8316",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "2967",
+            "acceptedCount": "3600"
+          },
+          "t": 5043461675392
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "5699",
+            "commandFresh": "false"
+          },
+          "t": 5042962627437
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99988017916397,
+      "freshness_samples": 2,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 0,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "16",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "3200",
+            "acceptedCount": "3618"
+          },
+          "t": 5055962865904
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "17",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "3200",
+            "acceptedCount": "3868"
+          },
+          "t": 5068460975455
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "6357",
+            "commandFresh": "false"
+          },
+          "t": 5067963170136
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "phase": "inf",
+      "wheel_index": 2,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999903704724293,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 0,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "5917",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "3319",
+            "acceptedCount": "4000"
+          },
+          "t": 5080964145497
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "18417",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "3569",
+            "acceptedCount": "4000"
+          },
+          "t": 5093461387267
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "6499",
+            "commandFresh": "false"
+          },
+          "t": 5080461247123
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "6499",
+            "commandFresh": "false"
+          },
+          "t": 5092964347931
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99991786600146,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 2,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "18",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "3600",
+            "acceptedCount": "4220"
+          },
+          "t": 5105964416445
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "7109",
+            "commandFresh": "false"
+          },
+          "t": 5105463361842
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "phase": "inf",
+      "wheel_index": 3,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999900815529475,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 1,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "3519",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "3671",
+            "acceptedCount": "4400"
+          },
+          "t": 5118463599750
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "16019",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "3921",
+            "acceptedCount": "4400"
+          },
+          "t": 5130967687386
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "7299",
+            "commandFresh": "false"
+          },
+          "t": 5117965553905
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "7299",
+            "commandFresh": "false"
+          },
+          "t": 5130464651209
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999885964559983,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 2,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "18",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "4000",
+            "acceptedCount": "4572"
+          },
+          "t": 5143464932318
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "7861",
+            "commandFresh": "false"
+          },
+          "t": 5142966722016
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "phase": "neg-inf",
+      "wheel_index": 0,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99990323555589,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 3,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "1103",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "4023",
+            "acceptedCount": "4800"
+          },
+          "t": 5155965821722
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "13603",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "4273",
+            "acceptedCount": "4800"
+          },
+          "t": 5168466872608
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "8099",
+            "commandFresh": "false"
+          },
+          "t": 5155465735944
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "8099",
+            "commandFresh": "false"
+          },
+          "t": 5167967837461
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99985556695784,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 0,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "19",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "4400",
+            "acceptedCount": "4924"
+          },
+          "t": 5180967134958
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "20",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "4400",
+            "acceptedCount": "5174"
+          },
+          "t": 5193468034277
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "8613",
+            "commandFresh": "false"
+          },
+          "t": 5180466897492
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "8863",
+            "commandFresh": "false"
+          },
+          "t": 5192967978601
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "phase": "neg-inf",
+      "wheel_index": 1,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99993142680153,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 0,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "11220",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "4625",
+            "acceptedCount": "5200"
+          },
+          "t": 5205969131998
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "8899",
+            "commandFresh": "false"
+          },
+          "t": 5205467035334
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99984005942442,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 4,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "20",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "4800",
+            "acceptedCount": "5276"
+          },
+          "t": 5218467123986
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "20",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "4800",
+            "acceptedCount": "5526"
+          },
+          "t": 5230969182886
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "9365",
+            "commandFresh": "false"
+          },
+          "t": 5217970269756
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "9615",
+            "commandFresh": "false"
+          },
+          "t": 5230468109437
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "phase": "neg-inf",
+      "wheel_index": 2,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999840548639668,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 4,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "8820",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "4977",
+            "acceptedCount": "5600"
+          },
+          "t": 5243468291808
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "9699",
+            "commandFresh": "false"
+          },
+          "t": 5242970179761
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99987932904888,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 1,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "20",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "5200",
+            "acceptedCount": "5628"
+          },
+          "t": 5255970244750
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "20",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "5200",
+            "acceptedCount": "5878"
+          },
+          "t": 5268469469176
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "10117",
+            "commandFresh": "false"
+          },
+          "t": 5255469186439
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "10367",
+            "commandFresh": "false"
+          },
+          "t": 5267971350991
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "phase": "neg-inf",
+      "wheel_index": 3,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "reject_increased": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.999837106088638,
+      "freshness_samples": 2,
+      "wheel_samples": 2,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 5,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "6420",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "5329",
+            "acceptedCount": "6000"
+          },
+          "t": 5280972357014
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "NONFINITE",
+          "values": {
+            "localAgeMs": "18920",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "5579",
+            "acceptedCount": "6000"
+          },
+          "t": 5293470464220
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "10499",
+            "commandFresh": "false"
+          },
+          "t": 5280470362361
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "10499",
+            "commandFresh": "false"
+          },
+          "t": 5292972518152
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "phase": "normal",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "local_age_below_250": true,
+        "accepted_increased": true,
+        "publish_rate_20hz": true
+      },
+      "publish_samples": 400,
+      "publish_rate_hz": 19.99985580254341,
+      "freshness_samples": 1,
+      "wheel_samples": 1,
+      "rpm_samples": 399,
+      "rpm_nonzero_samples": 4,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "TIME_UNSYNCED",
+          "values": {
+            "localAgeMs": "21",
+            "sourceAgeMs": "0",
+            "localFresh": "true",
+            "sourceTrusted": "false",
+            "rejectCount": "5600",
+            "acceptedCount": "6230"
+          },
+          "t": 5305971421354
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_TIME_UNVERIFIED",
+          "values": {
+            "flRadS": "0.10",
+            "rlRadS": "0.20",
+            "frRadS": "0.30",
+            "rrRadS": "0.40",
+            "sequence": "11119",
+            "commandFresh": "false"
+          },
+          "t": 5305471238280
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "phase": "stale",
+      "wheel_index": null,
+      "result": "PASS",
+      "checks": {
+        "freshness_observed": true,
+        "wheel_values_observed": true,
+        "reason": true,
+        "local_fresh": true,
+        "source_untrusted": true,
+        "combined_not_fresh": true,
+        "wheel_values": true,
+        "rpm_recorded": true,
+        "no_messages_sent": true,
+        "local_age_at_least_250": true
+      },
+      "publish_samples": 0,
+      "publish_rate_hz": null,
+      "freshness_samples": 3,
+      "wheel_samples": 3,
+      "rpm_samples": 806,
+      "rpm_nonzero_samples": 4,
+      "freshness_observations": [
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "LOCAL_TIMEOUT",
+          "values": {
+            "localAgeMs": "4020",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "5600",
+            "acceptedCount": "6400"
+          },
+          "t": 5318471360867
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "LOCAL_TIMEOUT",
+          "values": {
+            "localAgeMs": "16520",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "5600",
+            "acceptedCount": "6400"
+          },
+          "t": 5330973415384
+        },
+        {
+          "name": "pico_b/wheel_freshness",
+          "level": 1,
+          "message": "LOCAL_TIMEOUT",
+          "values": {
+            "localAgeMs": "29020",
+            "sourceAgeMs": "0",
+            "localFresh": "false",
+            "sourceTrusted": "false",
+            "rejectCount": "5600",
+            "acceptedCount": "6400"
+          },
+          "t": 5343471584593
+        }
+      ],
+      "wheel_observations": [
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "11299",
+            "commandFresh": "false"
+          },
+          "t": 5317973234549
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "11299",
+            "commandFresh": "false"
+          },
+          "t": 5330470475611
+        },
+        {
+          "name": "pico_b/wheel_command",
+          "level": 1,
+          "message": "RX_ONLY_INVALID",
+          "values": {
+            "flRadS": "0.00",
+            "rlRadS": "0.00",
+            "frRadS": "0.00",
+            "rrRadS": "0.00",
+            "sequence": "11299",
+            "commandFresh": "false"
+          },
+          "t": 5342973476525
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "phase_count": 32,
+    "sent_messages": 12000,
+    "diagnostic_messages": 1382,
+    "rpm_samples": 13825,
+    "rpm_rate_hz": 19.998987811442998,
+    "rpm_max_gap_ms": 94.105988,
+    "rpm_counts_by_motor": [
+      {
+        "0": 13768,
+        "-1": 57
+      },
+      {
+        "0": 13807,
+        "-1": 18
+      },
+      {
+        "0": 13810,
+        "-1": 15
+      },
+      {
+        "0": 13812,
+        "-1": 13
+      }
+    ],
+    "rpm_all_zero": false,
+    "motor_summary_samples": 55,
+    "command_rpm_values": [
+      "0"
+    ],
+    "source_trusted_values": [
+      "false"
+    ],
+    "command_fresh_values": [
+      "false"
+    ],
+    "final_freshness": {
+      "name": "pico_b/wheel_freshness",
+      "level": 1,
+      "message": "LOCAL_TIMEOUT",
+      "values": {
+        "localAgeMs": "29020",
+        "sourceAgeMs": "0",
+        "localFresh": "false",
+        "sourceTrusted": "false",
+        "rejectCount": "5600",
+        "acceptedCount": "6400"
+      },
+      "t": 5343471584593
+    },
+    "online_masks": [
+      "0x0F"
+    ],
+    "fault_masks": [
+      "0x00"
+    ],
+    "micro_ros_first": {
+      "name": "pico_b/micro_ros",
+      "level": 0,
+      "message": "OK",
+      "values": {
+        "agentState": "RUNNING",
+        "heartbeatPublishError": "0",
+        "telemetryPublishError": "0",
+        "diagnosticPublishError": "0",
+        "reconnectCount": "0",
+        "bootStage": "B3A"
+      },
+      "t": 4669938941231
+    },
+    "micro_ros_last": {
+      "name": "pico_b/micro_ros",
+      "level": 0,
+      "message": "OK",
+      "values": {
+        "agentState": "RUNNING",
+        "heartbeatPublishError": "0",
+        "telemetryPublishError": "0",
+        "diagnosticPublishError": "0",
+        "reconnectCount": "0",
+        "bootStage": "B3A"
+      },
+      "t": 5344973626352
+    }
+  },
+  "receive_only_result": "PASS"
+}

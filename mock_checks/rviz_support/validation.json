@@ -1,0 +1,63 @@
+{
+  "configuration_and_install": "PASS",
+  "launch_syntax_and_discovery": "PASS",
+  "installed_display_plugins": "PASS",
+  "wheel_separation_m": 0.24,
+  "wheelbase_m": 0.22,
+  "axle_measurement_status": "UNVERIFIED",
+  "wheel_centers": {
+    "front_left_wheel_joint": {
+      "base_link_xyz_m": [
+        0.11,
+        0.12,
+        -0.03465000000000001
+      ],
+      "base_footprint_xyz_m": [
+        0.11,
+        0.12,
+        0.05035
+      ]
+    },
+    "rear_left_wheel_joint": {
+      "base_link_xyz_m": [
+        -0.11,
+        0.12,
+        -0.03465000000000001
+      ],
+      "base_footprint_xyz_m": [
+        -0.11,
+        0.12,
+        0.05035
+      ]
+    },
+    "front_right_wheel_joint": {
+      "base_link_xyz_m": [
+        0.11,
+        -0.12,
+        -0.03465000000000001
+      ],
+      "base_footprint_xyz_m": [
+        0.11,
+        -0.12,
+        0.05035
+      ]
+    },
+    "rear_right_wheel_joint": {
+      "base_link_xyz_m": [
+        -0.11,
+        -0.12,
+        -0.03465000000000001
+      ],
+      "base_footprint_xyz_m": [
+        -0.11,
+        -0.12,
+        0.05035
+      ]
+    }
+  },
+  "mesh_resources_required": false,
+  "protected_files_unchanged": true,
+  "visual_status": "VISUAL NOT VERIFIED",
+  "two_device_network": "NOT TESTED; laptop not connected",
+  "gui_started": false
+}

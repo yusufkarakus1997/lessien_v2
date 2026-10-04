@@ -1,0 +1,98 @@
+{
+  "source": {
+    "front_left": [
+      0.08785,
+      0.0725,
+      -0.03465000000000001
+    ],
+    "rear_left": [
+      -0.08785,
+      0.0725,
+      -0.03465000000000001
+    ],
+    "front_right": [
+      0.08785,
+      -0.0725,
+      -0.03465000000000001
+    ],
+    "rear_right": [
+      -0.08785,
+      -0.0725,
+      -0.03465000000000001
+    ]
+  },
+  "installed": {
+    "front_left": [
+      0.08785,
+      0.0725,
+      -0.03465000000000001
+    ],
+    "rear_left": [
+      -0.08785,
+      0.0725,
+      -0.03465000000000001
+    ],
+    "front_right": [
+      0.08785,
+      -0.0725,
+      -0.03465000000000001
+    ],
+    "rear_right": [
+      -0.08785,
+      -0.0725,
+      -0.03465000000000001
+    ]
+  },
+  "description_launch_defaults": {
+    "wheel_radius": 0.05035,
+    "body_length": 0.32,
+    "body_width": 0.195,
+    "body_height": 0.1,
+    "wheel_separation": 0.145,
+    "wheelbase": 0.1757,
+    "wheel_width": 0.045,
+    "body_ground_clearance": 0.035,
+    "body_mass": 2.0,
+    "wheel_mass": 0.15
+  },
+  "mock_launch_defaults": {
+    "wheel_radius": 0.05035,
+    "body_length": 0.32,
+    "body_width": 0.195,
+    "body_height": 0.1,
+    "wheel_separation": 0.145,
+    "wheelbase": 0.1757,
+    "wheel_width": 0.045,
+    "body_ground_clearance": 0.035,
+    "body_mass": 2.0,
+    "wheel_mass": 0.15
+  },
+  "override": "PASS",
+  "box_tire_intersection": {
+    "all_four": true,
+    "body_y": [
+      -0.0975,
+      0.0975
+    ],
+    "left_tire_y": [
+      0.05,
+      0.095
+    ],
+    "right_tire_y": [
+      -0.095,
+      -0.05
+    ],
+    "body_z": [
+      0.035,
+      0.135
+    ],
+    "tire_z": [
+      0,
+      0.1007
+    ],
+    "z_projection_overlap": 0.0657,
+    "clearance_verified": false
+  },
+  "protected_files_unchanged": true,
+  "result": "PASS"
+}

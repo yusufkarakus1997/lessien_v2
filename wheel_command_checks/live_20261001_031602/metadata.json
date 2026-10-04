@@ -1,0 +1,657 @@
+{
+  "started_utc": "2026-10-01T00:16:02.911385+00:00",
+  "domain": 0,
+  "hashes_before": {
+    "wheel_command_checks/laptop_pico_b_node_app.cpp": "bc93062c2434f837aa35638d3c53284a2bb75e402fb98b170b43e0694058b5ee",
+    "wheel_command_checks/laptop_firmware_README.md": "edcbea8b530a7dee529298f1392c489ecb3881ab9d16dc3b23449251a0be2538",
+    "src/lessien_interfaces/msg/WheelCommand.msg": "cb0405a45866b3cc63c502e0e726fe0fb00bdeaa425f7eb4874accd595472d6b",
+    "tools/wheel_command_rx/publisher.py": "5496c48f330ec5e8df363f9757a7c919d019d638ac640357b9cec750f7c1f5e2"
+  },
+  "scope": "receive-only hardware test; not driving validation",
+  "conditional_continuation": "User explicitly approved continuing with nonzero measured RPM logged as separate FAIL; commandRpm and freshness guards retained",
+  "baseline_latest": {
+    "pico_b/motor_latency_12": {
+      "monotonic_ns": 4688940302928,
+      "message": "OK",
+      "values": {
+        "M1_latencyLastUs": "2455",
+        "M1_latencyMaxUs": "3010",
+        "M1_rxLengthLast": "10",
+        "M2_latencyLastUs": "2762",
+        "M2_latencyMaxUs": "2928",
+        "M2_rxLengthLast": "10"
+      }
+    },
+    "pico_b/motor_latency_34": {
+      "monotonic_ns": 4689439356483,
+      "message": "OK",
+      "values": {
+        "M3_latencyLastUs": "2565",
+        "M3_latencyMaxUs": "3008",
+        "M3_rxLengthLast": "10",
+        "M4_latencyLastUs": "2763",
+        "M4_latencyMaxUs": "3052",
+        "M4_rxLengthLast": "10"
+      }
+    },
+    "pico_b/motor_temperature_schedule": {
+      "monotonic_ns": 4689940385628,
+      "message": "OK",
+      "values": {
+        "temperatureQueryHz": "4.0",
+        "M1_tempQueryCount": "344",
+        "M2_tempQueryCount": "357",
+        "M3_tempQueryCount": "356",
+        "M4_tempQueryCount": "357",
+        "tempScheduleMissCount": "28"
+      }
+    },
+    "pico_b/motor_scheduler": {
+      "monotonic_ns": 4690438534808,
+      "message": "OK",
+      "values": {
+        "configuredCycleHz": "20",
+        "motorCycleHz": "20.0",
+        "motorTransactionHz": "80.0",
+        "motorSlotPeriodUs": "12500",
+        "motorSlotMissCount": "24",
+        "motorSlotLatenessMaxUs": "121856"
+      }
+    },
+    "pico_b/motor_transaction_guard": {
+      "monotonic_ns": 4690940488456,
+      "message": "OK",
+      "values": {
+        "tempStartCount": "1418",
+        "tempDeferredCount": "28",
+        "tempGuardRejectCount": "363",
+        "tempStartLatenessMaxUs": "1533",
+        "speedConsecutiveFailMax": "0",
+        "lastOfflineMotorId": "0"
+      }
+    },
+    "pico_b/oled_control": {
+      "monotonic_ns": 4691438700093,
+      "message": "MANUAL",
+      "values": {
+        "pageIndex": "0",
+        "pageName": "BATTERY",
+        "pageChangeCount": "0",
+        "ch3Value": "1002",
+        "inputArmed": "true",
+        "sbusHealthy": "true"
+      }
+    },
+    "pico_b/relays": {
+      "monotonic_ns": 4691940760961,
+      "message": "OK",
+      "values": {
+        "relay1On": "false",
+        "relay2On": "false",
+        "relay1Requested": "false",
+        "relay2Requested": "false",
+        "outputSafe": "true",
+        "relayFailsafeCount": "1"
+      }
+    },
+    "pico_b/camera_servo": {
+      "monotonic_ns": 4692437796408,
+      "message": "OK",
+      "values": {
+        "attached": "true",
+        "targetAngleDeg": "90",
+        "currentAngleDeg": "90",
+        "pulseUs": "1570",
+        "inputHealthy": "true",
+        "servoFailsafeCount": "1"
+      }
+    },
+    "pico_b/wheel_command": {
+      "monotonic_ns": 4680438289861,
+      "message": "RX_ONLY_INVALID",
+      "values": {
+        "flRadS": "0.00",
+        "rlRadS": "0.00",
+        "frRadS": "0.00",
+        "rrRadS": "0.00",
+        "sequence": "0",
+        "commandFresh": "false"
+      }
+    },
+    "pico_b/wheel_freshness": {
+      "monotonic_ns": 4680940485291,
+      "message": "LIFECYCLE_RESET",
+      "values": {
+        "localAgeMs": "0",
+        "sourceAgeMs": "0",
+        "localFresh": "false",
+        "sourceTrusted": "false",
+        "rejectCount": "0",
+        "acceptedCount": "0"
+      }
+    },
+    "pico_b/sbus": {
+      "monotonic_ns": 4681438381884,
+      "message": "OK",
+      "values": {
+        "sbusHz": "74.0",
+        "connected": "true",
+        "failsafe": "false",
+        "frameLostCount": "0",
+        "invalidFrameCount": "43",
+        "frameAgeMs": "11"
+      }
+    },
+    "pico_b/battery": {
+      "monotonic_ns": 4681941283263,
+      "message": "OK",
+      "values": {
+        "voltage": "19.12",
+        "socPercent": "62",
+        "valid": "true",
+        "low": "false",
+        "critical": "false",
+        "adcRaw": "2472"
+      }
+    },
+    "pico_b/micro_ros": {
+      "monotonic_ns": 4682436604557,
+      "message": "OK",
+      "values": {
+        "agentState": "RUNNING",
+        "heartbeatPublishError": "0",
+        "telemetryPublishError": "0",
+        "diagnosticPublishError": "0",
+        "reconnectCount": "0",
+        "bootStage": "B3A"
+      }
+    },
+    "pico_b/oled": {
+      "monotonic_ns": 4682940498333,
+      "message": "OK",
+      "values": {
+        "oledEnabled": "true",
+        "oledAvailable": "true",
+        "oledUpdateHz": "2.0",
+        "oledLastUpdateUs": "28728",
+        "oledWindowMaxUs": "28746",
+        "oledInitFailureCount": "0"
+      }
+    },
+    "pico_b/motors": {
+      "monotonic_ns": 4683438534007,
+      "message": "OK",
+      "values": {
+        "motorTransactionHz": "80.0",
+        "motorCycleHz": "20.0",
+        "onlineMask": "0x0F",
+        "faultMask": "0x00",
+        "commandRpm": "0",
+        "motorTaskWindowMaxUs": "39"
+      }
+    },
+    "pico_b/motor_1_fl": {
+      "monotonic_ns": 4683939779218,
+      "message": "OK",
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.80",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    "pico_b/motor_2_rl": {
+      "monotonic_ns": 4684437631681,
+      "message": "OK",
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.32",
+        "temperatureC": "35",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    "pico_b/motor_3_fr": {
+      "monotonic_ns": 4684940843085,
+      "message": "OK",
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.44",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    "pico_b/motor_4_rr": {
+      "monotonic_ns": 4685438036469,
+      "message": "OK",
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.60",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    "pico_b/motor_comm_12": {
+      "monotonic_ns": 4685940888222,
+      "message": "OK",
+      "values": {
+        "M1_crc": "0",
+        "M1_timeout": "0",
+        "M1_wrongId": "0",
+        "M2_crc": "0",
+        "M2_timeout": "0",
+        "M2_wrongId": "0"
+      }
+    },
+    "pico_b/motor_comm_34": {
+      "monotonic_ns": 4686437981162,
+      "message": "OK",
+      "values": {
+        "M3_crc": "0",
+        "M3_timeout": "0",
+        "M3_wrongId": "0",
+        "M4_crc": "0",
+        "M4_timeout": "0",
+        "M4_wrongId": "0"
+      }
+    },
+    "pico_b/motor_detail_1_fl": {
+      "monotonic_ns": 4686940229599,
+      "message": "OK",
+      "values": {
+        "speedTimeout": "0",
+        "temperatureTimeout": "0",
+        "speedCrcError": "0",
+        "temperatureCrcError": "0",
+        "rxLengthLast": "10",
+        "lateResponseCount": "0"
+      }
+    },
+    "pico_b/motor_detail_2_rl": {
+      "monotonic_ns": 4687437258079,
+      "message": "OK",
+      "values": {
+        "speedTimeout": "0",
+        "temperatureTimeout": "0",
+        "speedCrcError": "0",
+        "temperatureCrcError": "0",
+        "rxLengthLast": "10",
+        "lateResponseCount": "0"
+      }
+    },
+    "pico_b/motor_detail_3_fr": {
+      "monotonic_ns": 4687940094105,
+      "message": "OK",
+      "values": {
+        "speedTimeout": "0",
+        "temperatureTimeout": "0",
+        "speedCrcError": "0",
+        "temperatureCrcError": "0",
+        "rxLengthLast": "10",
+        "lateResponseCount": "0"
+      }
+    },
+    "pico_b/motor_detail_4_rr": {
+      "monotonic_ns": 4688438255288,
+      "message": "OK",
+      "values": {
+        "speedTimeout": "0",
+        "temperatureTimeout": "0",
+        "speedCrcError": "0",
+        "temperatureCrcError": "0",
+        "rxLengthLast": "10",
+        "lateResponseCount": "0"
+      }
+    }
+  },
+  "command": [
+    "/usr/bin/python3",
+    "tools/wheel_command_rx/publisher.py",
+    "--publish",
+    "--case",
+    "suite",
+    "--protocol-version",
+    "1",
+    "--session-id",
+    "2026100101",
+    "--start-sequence",
+    "100",
+    "--values",
+    "0.10",
+    "0.20",
+    "0.30",
+    "0.40",
+    "--seconds",
+    "20",
+    "--stale-seconds",
+    "20",
+    "--firmware-contract",
+    "wheel_command_checks/laptop_firmware_README.md",
+    "--log",
+    "/home/pi5/lessien_ws/wheel_command_checks/live_20261001_031602/publisher.jsonl"
+  ],
+  "publisher_start_monotonic_ns": 4692437994848,
+  "publisher_exit_code": 0,
+  "execution": "COMPLETE; analysis pending",
+  "rpm_messages": 13825,
+  "diagnostic_messages": 1382,
+  "nonzero_rpm": 98,
+  "violations": [],
+  "finished_utc": "2026-10-01T00:27:35.268240+00:00",
+  "duration_s": 692.3579822689999,
+  "final_latest": {
+    "pico_b/motor_latency_12": {
+      "monotonic_ns": 5351472081148,
+      "message": "OK",
+      "values": {
+        "M1_latencyLastUs": "2464",
+        "M1_latencyMaxUs": "2464",
+        "M1_rxLengthLast": "10",
+        "M2_latencyLastUs": "2909",
+        "M2_latencyMaxUs": "2909",
+        "M2_rxLengthLast": "10"
+      }
+    },
+    "pico_b/motor_latency_34": {
+      "monotonic_ns": 5351974053096,
+      "message": "OK",
+      "values": {
+        "M3_latencyLastUs": "2153",
+        "M3_latencyMaxUs": "3001",
+        "M3_rxLengthLast": "10",
+        "M4_latencyLastUs": "2845",
+        "M4_latencyMaxUs": "3056",
+        "M4_rxLengthLast": "10"
+      }
+    },
+    "pico_b/motor_temperature_schedule": {
+      "monotonic_ns": 5352471061676,
+      "message": "OK",
+      "values": {
+        "temperatureQueryHz": "4.0",
+        "M1_tempQueryCount": "1006",
+        "M2_tempQueryCount": "1020",
+        "M3_tempQueryCount": "1019",
+        "M4_tempQueryCount": "1019",
+        "tempScheduleMissCount": "73"
+      }
+    },
+    "pico_b/motor_scheduler": {
+      "monotonic_ns": 5352976099295,
+      "message": "OK",
+      "values": {
+        "configuredCycleHz": "20",
+        "motorCycleHz": "20.0",
+        "motorTransactionHz": "80.0",
+        "motorSlotPeriodUs": "12500",
+        "motorSlotMissCount": "24",
+        "motorSlotLatenessMaxUs": "121856"
+      }
+    },
+    "pico_b/motor_transaction_guard": {
+      "monotonic_ns": 5353471995939,
+      "message": "OK",
+      "values": {
+        "tempStartCount": "4068",
+        "tempDeferredCount": "73",
+        "tempGuardRejectCount": "414",
+        "tempStartLatenessMaxUs": "1533",
+        "speedConsecutiveFailMax": "0",
+        "lastOfflineMotorId": "0"
+      }
+    },
+    "pico_b/oled_control": {
+      "monotonic_ns": 5353974042557,
+      "message": "MANUAL",
+      "values": {
+        "pageIndex": "0",
+        "pageName": "BATTERY",
+        "pageChangeCount": "0",
+        "ch3Value": "1002",
+        "inputArmed": "true",
+        "sbusHealthy": "true"
+      }
+    },
+    "pico_b/relays": {
+      "monotonic_ns": 5354472144369,
+      "message": "OK",
+      "values": {
+        "relay1On": "false",
+        "relay2On": "false",
+        "relay1Requested": "false",
+        "relay2Requested": "false",
+        "outputSafe": "true",
+        "relayFailsafeCount": "1"
+      }
+    },
+    "pico_b/camera_servo": {
+      "monotonic_ns": 5342472316469,
+      "message": "OK",
+      "values": {
+        "attached": "true",
+        "targetAngleDeg": "90",
+        "currentAngleDeg": "90",
+        "pulseUs": "1570",
+        "inputHealthy": "true",
+        "servoFailsafeCount": "1"
+      }
+    },
+    "pico_b/wheel_command": {
+      "monotonic_ns": 5342973476525,
+      "message": "RX_ONLY_INVALID",
+      "values": {
+        "flRadS": "0.00",
+        "rlRadS": "0.00",
+        "frRadS": "0.00",
+        "rrRadS": "0.00",
+        "sequence": "11299",
+        "commandFresh": "false"
+      }
+    },
+    "pico_b/wheel_freshness": {
+      "monotonic_ns": 5343471584593,
+      "message": "LOCAL_TIMEOUT",
+      "values": {
+        "localAgeMs": "29020",
+        "sourceAgeMs": "0",
+        "localFresh": "false",
+        "sourceTrusted": "false",
+        "rejectCount": "5600",
+        "acceptedCount": "6400"
+      }
+    },
+    "pico_b/sbus": {
+      "monotonic_ns": 5343974453934,
+      "message": "OK",
+      "values": {
+        "sbusHz": "76.0",
+        "connected": "true",
+        "failsafe": "false",
+        "frameLostCount": "0",
+        "invalidFrameCount": "43",
+        "frameAgeMs": "6"
+      }
+    },
+    "pico_b/battery": {
+      "monotonic_ns": 5344472871733,
+      "message": "OK",
+      "values": {
+        "voltage": "18.98",
+        "socPercent": "60",
+        "valid": "true",
+        "low": "false",
+        "critical": "false",
+        "adcRaw": "2447"
+      }
+    },
+    "pico_b/micro_ros": {
+      "monotonic_ns": 5344973626352,
+      "message": "OK",
+      "values": {
+        "agentState": "RUNNING",
+        "heartbeatPublishError": "0",
+        "telemetryPublishError": "0",
+        "diagnosticPublishError": "0",
+        "reconnectCount": "0",
+        "bootStage": "B3A"
+      }
+    },
+    "pico_b/oled": {
+      "monotonic_ns": 5345472601591,
+      "message": "OK",
+      "values": {
+        "oledEnabled": "true",
+        "oledAvailable": "true",
+        "oledUpdateHz": "2.0",
+        "oledLastUpdateUs": "28745",
+        "oledWindowMaxUs": "28746",
+        "oledInitFailureCount": "0"
+      }
+    },
+    "pico_b/motors": {
+      "monotonic_ns": 5345973633329,
+      "message": "OK",
+      "values": {
+        "motorTransactionHz": "79.9",
+        "motorCycleHz": "20.0",
+        "onlineMask": "0x0F",
+        "faultMask": "0x00",
+        "commandRpm": "0",
+        "motorTaskWindowMaxUs": "44"
+      }
+    },
+    "pico_b/motor_1_fl": {
+      "monotonic_ns": 5346471759361,
+      "message": "OK",
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.78",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    "pico_b/motor_2_rl": {
+      "monotonic_ns": 5346974651906,
+      "message": "OK",
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.35",
+        "temperatureC": "35",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    "pico_b/motor_3_fr": {
+      "monotonic_ns": 5347472577804,
+      "message": "OK",
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.68",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    "pico_b/motor_4_rr": {
+      "monotonic_ns": 5347973721304,
+      "message": "OK",
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.72",
+        "temperatureC": "41",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    "pico_b/motor_comm_12": {
+      "monotonic_ns": 5348470738271,
+      "message": "OK",
+      "values": {
+        "M1_crc": "0",
+        "M1_timeout": "0",
+        "M1_wrongId": "0",
+        "M2_crc": "0",
+        "M2_timeout": "0",
+        "M2_wrongId": "0"
+      }
+    },
+    "pico_b/motor_comm_34": {
+      "monotonic_ns": 5348974704899,
+      "message": "OK",
+      "values": {
+        "M3_crc": "0",
+        "M3_timeout": "0",
+        "M3_wrongId": "0",
+        "M4_crc": "0",
+        "M4_timeout": "0",
+        "M4_wrongId": "0"
+      }
+    },
+    "pico_b/motor_detail_1_fl": {
+      "monotonic_ns": 5349471894834,
+      "message": "OK",
+      "values": {
+        "speedTimeout": "0",
+        "temperatureTimeout": "0",
+        "speedCrcError": "0",
+        "temperatureCrcError": "0",
+        "rxLengthLast": "10",
+        "lateResponseCount": "0"
+      }
+    },
+    "pico_b/motor_detail_2_rl": {
+      "monotonic_ns": 5349975813443,
+      "message": "OK",
+      "values": {
+        "speedTimeout": "0",
+        "temperatureTimeout": "0",
+        "speedCrcError": "0",
+        "temperatureCrcError": "0",
+        "rxLengthLast": "10",
+        "lateResponseCount": "0"
+      }
+    },
+    "pico_b/motor_detail_3_fr": {
+      "monotonic_ns": 5350471939814,
+      "message": "OK",
+      "values": {
+        "speedTimeout": "0",
+        "temperatureTimeout": "0",
+        "speedCrcError": "0",
+        "temperatureCrcError": "0",
+        "rxLengthLast": "10",
+        "lateResponseCount": "0"
+      }
+    },
+    "pico_b/motor_detail_4_rr": {
+      "monotonic_ns": 5350973170669,
+      "message": "OK",
+      "values": {
+        "speedTimeout": "0",
+        "temperatureTimeout": "0",
+        "speedCrcError": "0",
+        "temperatureCrcError": "0",
+        "rxLengthLast": "10",
+        "lateResponseCount": "0"
+      }
+    }
+  },
+  "hashes_after": {
+    "wheel_command_checks/laptop_pico_b_node_app.cpp": "bc93062c2434f837aa35638d3c53284a2bb75e402fb98b170b43e0694058b5ee",
+    "wheel_command_checks/laptop_firmware_README.md": "edcbea8b530a7dee529298f1392c489ecb3881ab9d16dc3b23449251a0be2538",
+    "src/lessien_interfaces/msg/WheelCommand.msg": "cb0405a45866b3cc63c502e0e726fe0fb00bdeaa425f7eb4874accd595472d6b",
+    "tools/wheel_command_rx/publisher.py": "5496c48f330ec5e8df363f9757a7c919d019d638ac640357b9cec750f7c1f5e2"
+  }
+}

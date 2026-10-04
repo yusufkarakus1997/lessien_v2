@@ -1,0 +1,33 @@
+usage: publisher.py [-h] [--protocol-version PROTOCOL_VERSION]
+                    [--session-id SESSION_ID]
+                    [--start-sequence START_SEQUENCE] [--values FL RL FR RR]
+                    [--case {normal,stale,duplicate,old,nan,inf,neg-inf,suite}]
+                    [--wheel-index {0,1,2,3}] [--seconds SECONDS]
+                    [--stale-seconds STALE_SECONDS] [--publish]
+                    [--topic TOPIC] [--firmware-contract FIRMWARE_CONTRACT]
+                    [--log LOG]
+
+WheelCommand test generator. Default is offline; --publish explicitly enables
+DDS. Protocol version and topic verified from the transferred firmware
+source/README.
+
+options:
+  -h, --help            show this help message and exit
+  --protocol-version PROTOCOL_VERSION
+                        firmware WHEEL_COMMAND_PROTOCOL_VERSION=1; offline
+                        fixtures may override
+  --session-id SESSION_ID
+                        fixed test ID; constant throughout every phase
+  --start-sequence START_SEQUENCE
+  --values FL RL FR RR
+  --case {normal,stale,duplicate,old,nan,inf,neg-inf,suite}
+  --wheel-index {0,1,2,3}
+  --seconds SECONDS     seconds per publishing phase at 20 Hz
+  --stale-seconds STALE_SECONDS
+                        silent interval; no final zero message
+  --publish             explicitly enable domain 0 DDS publication
+  --topic TOPIC         fixed topic confirmed by laptop README
+  --firmware-contract FIRMWARE_CONTRACT
+                        matching laptop README; required for live mode after
+                        manual contract review
+  --log LOG

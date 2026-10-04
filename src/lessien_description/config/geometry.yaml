@@ -1,0 +1,23 @@
+# Single source of geometry defaults; SI units. User-confirmed dimensions.
+wheel_radius: 0.05035
+body_length: 0.32
+body_width: 0.195
+body_height: 0.10
+# Inner lateral gap 0.10 + tire width 0.045.
+wheel_separation: 0.145
+# Fore/aft tire edge gap 0.075 + diameter 0.1007.
+wheelbase: 0.1757
+wheel_width: 0.045
+# UNVERIFIED: underside clearance, body mass and each wheel mass.
+# The solid body box overlaps tires at this clearance; see README.
+body_ground_clearance: 0.035
+body_mass: 2.0
+wheel_mass: 0.15
+# IMU (Pico A / BNO08x) mount pose relative to base_link.
+# REP-103: base_link same orientation as imu_link; placeholder until PCB calibrated.
+imu_mount_x: 0.0
+imu_mount_y: 0.0
+imu_mount_z: 0.0
+imu_mount_roll: 0.0
+imu_mount_pitch: 0.0
+imu_mount_yaw: 0.0

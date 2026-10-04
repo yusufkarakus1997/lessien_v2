@@ -1,0 +1,6 @@
+1790806491.2625222 [INFO] [launch]: All log files can be found below /home/pi5/lessien_ws/mock_checks/ros_logs/2026-10-01-01-14-51-260944-pi5-raspbery-8594
+1790806491.2627592 [INFO] [launch]: Default logging verbosity is set to INFO
+1790806491.4157972 [INFO] [robot_state_publisher-1]: process started with pid [8597]
+1790806491.4161627 [INFO] [ros2_control_node-2]: process started with pid [8598]
+1790806491.4163156 [INFO] [spawner-3]: process started with pid [8599]
+1790806492.7381766 [INFO] [spawner-3]: process has finished cleanly [pid 8599]

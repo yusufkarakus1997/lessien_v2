@@ -1,0 +1,6 @@
+{
+  "scope": "MOCK ONLY; not hardware validation",
+  "domain": 77,
+  "result": "FAIL",
+  "error": "AssertionError('/lessien_mock/controller_manager/list_hardware_components')"
+}

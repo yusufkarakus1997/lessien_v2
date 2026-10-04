@@ -1,0 +1,39 @@
+{
+  "started_utc": "2026-10-01T00:13:51.508292+00:00",
+  "domain": 0,
+  "hashes_before": {
+    "wheel_command_checks/laptop_pico_b_node_app.cpp": "bc93062c2434f837aa35638d3c53284a2bb75e402fb98b170b43e0694058b5ee",
+    "wheel_command_checks/laptop_firmware_README.md": "edcbea8b530a7dee529298f1392c489ecb3881ab9d16dc3b23449251a0be2538",
+    "src/lessien_interfaces/msg/WheelCommand.msg": "cb0405a45866b3cc63c502e0e726fe0fb00bdeaa425f7eb4874accd595472d6b",
+    "tools/wheel_command_rx/publisher.py": "5496c48f330ec5e8df363f9757a7c919d019d638ac640357b9cec750f7c1f5e2"
+  },
+  "scope": "receive-only hardware test; not driving validation",
+  "execution": "INCOMPLETE",
+  "error": "TypeError('Object of type bytes is not JSON serializable')",
+  "rpm_messages": 7,
+  "diagnostic_messages": 0,
+  "nonzero_rpm": 0,
+  "violations": [],
+  "finished_utc": "2026-10-01T00:13:51.915774+00:00",
+  "duration_s": 0.40856774500025494,
+  "final_latest": {
+    "pico_b/sbus": {
+      "monotonic_ns": 4531425556217,
+      "message": "OK",
+      "values": {
+        "sbusHz": "76.0",
+        "connected": "true",
+        "failsafe": "false",
+        "frameLostCount": "0",
+        "invalidFrameCount": "43",
+        "frameAgeMs": "5"
+      }
+    }
+  },
+  "hashes_after": {
+    "wheel_command_checks/laptop_pico_b_node_app.cpp": "bc93062c2434f837aa35638d3c53284a2bb75e402fb98b170b43e0694058b5ee",
+    "wheel_command_checks/laptop_firmware_README.md": "edcbea8b530a7dee529298f1392c489ecb3881ab9d16dc3b23449251a0be2538",
+    "src/lessien_interfaces/msg/WheelCommand.msg": "cb0405a45866b3cc63c502e0e726fe0fb00bdeaa425f7eb4874accd595472d6b",
+    "tools/wheel_command_rx/publisher.py": "5496c48f330ec5e8df363f9757a7c919d019d638ac640357b9cec750f7c1f5e2"
+  }
+}

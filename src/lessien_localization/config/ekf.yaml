@@ -1,0 +1,93 @@
+/**:
+  ros__parameters:
+    # --- Frame conventions (REP-103) ------------------------------------------
+    map_frame:           map
+    odom_frame:          odom
+    base_link_frame:     base_footprint
+    world_frame:         odom
+    publish_tf:          true
+    # EKF is the SOLE owner of the odom -> base_footprint TF edge.
+    # lessien_odometry /wheel_odom node explicitly publishes NO tf broadcaster.
+    tf_time_offset:      0.0
+    publish_acceleration: false
+
+    # --- Timing ---------------------------------------------------------------
+    frequency:           30.0
+    sensor_timeout:      0.2
+    two_d_mode:          true
+    print_diagnostics:   true
+    transform_time_offset: 0.0
+
+    # --- Initial state / process noise (conservative v1 tunings) --------------
+    # Process noise diagonal (x y z roll pitch yaw vx vy vz vroll vpitch vyaw
+    # ax ay az): placeholder conservative values for the EKF prediction step.
+    process_noise_covariance: [
+      0.05,   0.0,    0.0, 0.0, 0.0, 0.0,   0.0,    0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.05,   0.0, 0.0, 0.0, 0.0,   0.0,    0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.0,    0.1, 0.0, 0.0, 0.0,   0.0,    0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.1, 0.0, 0.0,   0.0,    0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.1, 0.0,   0.0,    0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.0, 0.08,  0.0,    0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.0, 0.0,   0.01,   0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.0, 0.0,   0.0,    0.1,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.0, 0.0,   0.0,    0.0,  0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.0, 0.0,   0.0,    0.0,  0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.0, 0.0,   0.0,    0.0,  0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.0, 0.0,   0.0,    0.0,  0.0, 0.0, 0.0, 0.04,0.0, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.0, 0.0,   0.0,    0.0,  0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.0, 0.0,   0.0,    0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0,
+      0.0,    0.0,    0.0, 0.0, 0.0, 0.0,   0.0,    0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1
+    ]
+
+    initial_estimate_covariance: [
+      1e-3, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,  1e-3, 0.0, 0.0, 0.0, 0.0, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,  0.0,  1e-3,0.0, 0.0, 0.0, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,  0.0,  0.0, 1e-3,0.0, 0.0, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,  0.0,  0.0, 0.0, 1e-3,0.0, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,  0.0,  0.0, 0.0, 0.0, 1e-3,0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,  0.0,  0.0, 0.0, 0.0, 0.0, 1e-3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,  0.0,  0.0, 0.0, 0.0, 0.0, 0.0,  1e-3,0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,  0.0,  0.0, 0.0, 0.0, 0.0, 0.0,  0.0, 1e-3,0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,  0.0,  0.0, 0.0, 0.0, 0.0, 0.0,  0.0, 0.0, 1e-3,0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0,  0.0,  0.0, 0.0, 0.0, 0.0, 0.0,  0.0, 0.0, 0.0, 1e-3,0.0, 0.0, 0.0, 0.0,
+      0.0,  0.0,  0.0, 0.0, 0.0, 0.0, 0.0,  0.0, 0.0, 0.0, 0.0, 1e-3,0.0, 0.0, 0.0,
+      0.0,  0.0,  0.0, 0.0, 0.0, 0.0, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 1e-2,0.0, 0.0,
+      0.0,  0.0,  0.0, 0.0, 0.0, 0.0, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1e-2,0.0,
+      0.0,  0.0,  0.0, 0.0, 0.0, 0.0, 0.0,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1e-2
+    ]
+
+    # --- Wheel odometry input (lessien_odometry -> /wheel_odom) ----------------
+    # fuse ONLY twist/linear.x.
+    # DO NOT fuse: pose (x,y), yaw, vy, roll/pitch, angular.z.
+    odom0: /wheel_odom
+    odom0_config: [
+      false, false, false,   # x, y, z
+      false, false, false,   # roll, pitch, yaw
+      true,  true,  false,   # vx, vy, vz        ← vx fused + non-holonomic vy=0 constraint fused
+      false, false, false,   # vroll, vpitch, vyaw
+      false, false, false    # ax, ay, az
+    ]
+    odom0_differential: false
+    odom0_relative:     false
+    odom0_queue_size:   10
+    odom0_pose_rejection_threshold:  1.0e9
+    odom0_twist_rejection_threshold: 1.0e9
+
+    # --- IMU input (Pico A BNO085 GRV -> /imu/data, frame=imu_link) ------------
+    # BNO085 publishes orientation (GRV) + gyro (ang vel). linear_accel is
+    # unused and marked not available (covariance[0]==-1).
+    # fuse ONLY: orientation yaw + angular_velocity.z.
+    # DO NOT fuse: roll, pitch, linear accelerations.
+    imu0: /imu/data
+    imu0_config: [
+      false, false, false,   # x, y, z
+      false, false, true,    # roll, pitch, yaw    ← yaw fused
+      false, false, false,   # vx, vy, vz
+      false, false, true,    # vroll, vpitch, vyaw ← gyro.z fused
+      false, false, false    # ax, ay, az          ← ACCELERATIONS NOT FUSED
+    ]
+    imu0_differential: false
+    imu0_relative:     false
+    imu0_queue_size:   20
+    imu0_remove_gravitational_acceleration: false

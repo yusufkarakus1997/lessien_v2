@@ -1,0 +1,17 @@
+{
+  "utc_start": "2026-09-30T20:32:37.631510+00:00",
+  "duration_s": 60.019555995999326,
+  "domain_id": 0,
+  "counts": {
+    "/pico_b/motors/rpm": 0,
+    "/diagnostics": 0,
+    "/rosout": 0
+  },
+  "qos": "sensor_data",
+  "publishers_at_end": {
+    "/pico_b/motors/rpm": 0,
+    "/diagnostics": 0,
+    "/rosout": 0
+  },
+  "note": "Subscriptions only. No motor commands published."
+}

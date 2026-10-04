@@ -1,0 +1,43 @@
+name: Nightly
+
+on:
+  schedule:
+    # Run once per day to detect broken dependencies.
+    - cron: '33 6 * * *'
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Manual trigger"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - docker_image: ubuntu:24.04
+            ros_distribution: rolling
+          - docker_image: ubuntu:26.04
+            ros_distribution: lyrical
+          - docker_image: ubuntu:24.04
+            ros_distribution: kilted
+          - docker_image: ubuntu:24.04
+            ros_distribution: jazzy
+          - docker_image: ubuntu:jammy
+            ros_distribution: humble
+    container:
+      image: ${{ matrix.docker_image }}
+
+    steps:
+    - uses: actions/checkout@v7
+
+    - uses: ros-tooling/setup-ros@0.7.19
+      with:
+        required-ros-distributions: ${{ matrix.ros_distribution }}
+
+    - uses : ros-tooling/action-ros-ci@0.4.8
+      with:
+        package-name: "micro_ros_utilities"
+        target-ros2-distro: ${{ matrix.ros_distribution }}
+        coverage-result: false

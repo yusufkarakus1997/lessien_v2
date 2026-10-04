@@ -1,0 +1,70 @@
+{
+  "execution": "INCOMPLETE",
+  "duration_s": 30.042342392000137,
+  "rpm_samples": 601,
+  "rpm_counts": [
+    {
+      "0": 597,
+      "-1": 4
+    },
+    {
+      "0": 601
+    },
+    {
+      "0": 601
+    },
+    {
+      "0": 601
+    }
+  ],
+  "rpm_rate_hz": 19.997942421036672,
+  "diagnostic_messages": 60,
+  "motor_summaries": [
+    {
+      "motorTransactionHz": "80.0",
+      "motorCycleHz": "20.0",
+      "onlineMask": "0x0F",
+      "faultMask": "0x00",
+      "commandRpm": "0",
+      "motorTaskWindowMaxUs": "23"
+    },
+    {
+      "motorTransactionHz": "80.0",
+      "motorCycleHz": "20.0",
+      "onlineMask": "0x0F",
+      "faultMask": "0x00",
+      "commandRpm": "0",
+      "motorTaskWindowMaxUs": "38"
+    }
+  ],
+  "wheel_freshness": [
+    {
+      "name": "pico_b/wheel_freshness",
+      "level": 1,
+      "message": "LIFECYCLE_RESET",
+      "values": {
+        "localAgeMs": "0",
+        "sourceAgeMs": "0",
+        "localFresh": "false",
+        "sourceTrusted": "false",
+        "rejectCount": "0",
+        "acceptedCount": "0"
+      }
+    },
+    {
+      "name": "pico_b/wheel_freshness",
+      "level": 1,
+      "message": "LIFECYCLE_RESET",
+      "values": {
+        "localAgeMs": "0",
+        "sourceAgeMs": "0",
+        "localFresh": "false",
+        "sourceTrusted": "false",
+        "rejectCount": "0",
+        "acceptedCount": "0"
+      }
+    }
+  ],
+  "publisher_started": false,
+  "protected_hashes_equal": true
+}

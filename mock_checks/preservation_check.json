@@ -1,0 +1,13 @@
+{
+  "firmware_files_unchanged": true,
+  "sha256": {
+    "PICO_B_MICROROS_CONTROL_NODE/pico_b_node_app.cpp": "7c486db9afec214260a7745f7f5e51b28ba916d36da63c9ade4b7faab670559c",
+    "PICO_B_MICROROS_CONTROL_NODE/12_task.code-workspace": "a5006f74d5bda846cca77a982a1bce81ddcd6283bbbea9e76cf321e07f28a7f6",
+    "PICO_B_MICROROS_CONTROL_NODE/README.md": "f31ec2590dfad7743d2ef78f8465a712022b59c108175579e505dd088ca51d9d",
+    "PICO_B_MICROROS_CONTROL_NODE/PICO_B_MICROROS_CONTROL_NODE.ino": "bb1c4764755a1875767fe76108f46b4264a39509260061d898ef2e2efcf7dfc3"
+  },
+  "existing_micro_ros_agent_process": [
+    "2075 /uros_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent serial --dev /dev/serial/by-id/usb-Raspberry_Pi_Pico_2_24838E5A5FE1049C-if00 -v4"
+  ],
+  "agent_action": "none"
+}

@@ -1,0 +1,3800 @@
+{
+  "time_origin": "first received RPM host monotonic timestamp",
+  "motor_summary": [
+    {
+      "motor": 1,
+      "minus_one": 57,
+      "percent": 0.41229656419529837,
+      "runs": 49,
+      "run_lengths": {
+        "1": 42,
+        "2": 6,
+        "3": 1
+      },
+      "max_span_ms": 98.876249,
+      "bracket_ms_range": [
+        94.19051,
+        199.940172
+      ]
+    },
+    {
+      "motor": 2,
+      "minus_one": 18,
+      "percent": 0.1301989150090416,
+      "runs": 9,
+      "run_lengths": {
+        "1": 4,
+        "2": 4,
+        "6": 1
+      },
+      "max_span_ms": 251.021652,
+      "bracket_ms_range": [
+        94.992056,
+        357.056348
+      ]
+    },
+    {
+      "motor": 3,
+      "minus_one": 15,
+      "percent": 0.10849909584086799,
+      "runs": 6,
+      "run_lengths": {
+        "1": 3,
+        "5": 2,
+        "2": 1
+      },
+      "max_span_ms": 204.06752,
+      "bracket_ms_range": [
+        99.039421,
+        296.133253
+      ]
+    },
+    {
+      "motor": 4,
+      "minus_one": 13,
+      "percent": 0.09403254972875226,
+      "runs": 13,
+      "run_lengths": {
+        "1": 13
+      },
+      "max_span_ms": 0.0,
+      "bracket_ms_range": [
+        93.866581,
+        102.946333
+      ]
+    }
+  ],
+  "phase_groups": {
+    "baseline": {
+      "samples": 648,
+      "minus_one": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "any_minus_one": 5,
+      "percent_per_motor": [
+        0.1543,
+        0.1543,
+        0.1543,
+        0.3086
+      ]
+    },
+    "normal": {
+      "samples": 6384,
+      "minus_one": [
+        23,
+        12,
+        6,
+        4
+      ],
+      "any_minus_one": 42,
+      "percent_per_motor": [
+        0.3603,
+        0.188,
+        0.094,
+        0.0627
+      ]
+    },
+    "stale": {
+      "samples": 1207,
+      "minus_one": [
+        8,
+        0,
+        0,
+        2
+      ],
+      "any_minus_one": 10,
+      "percent_per_motor": [
+        0.6628,
+        0.0,
+        0.0,
+        0.1657
+      ]
+    },
+    "rejected": {
+      "samples": 5586,
+      "minus_one": [
+        25,
+        5,
+        8,
+        5
+      ],
+      "any_minus_one": 41,
+      "percent_per_motor": [
+        0.4475,
+        0.0895,
+        0.1432,
+        0.0895
+      ]
+    }
+  },
+  "phases": [
+    {
+      "index": -1,
+      "phase": "baseline",
+      "wheel_index": null,
+      "start_ns": 4663543073301,
+      "end_ns": 4695929271805,
+      "samples": 648,
+      "minus_one": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "any_minus_one": 5
+    },
+    {
+      "index": 0,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 4695929271805,
+      "end_ns": 4715879773620,
+      "samples": 399,
+      "minus_one": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "any_minus_one": 4
+    },
+    {
+      "index": 1,
+      "phase": "stale",
+      "wheel_index": null,
+      "start_ns": 4715879773620,
+      "end_ns": 4735880145140,
+      "samples": 400,
+      "minus_one": [
+        4,
+        0,
+        0,
+        2
+      ],
+      "any_minus_one": 6
+    },
+    {
+      "index": 2,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 4735880145140,
+      "end_ns": 4755830626694,
+      "samples": 399,
+      "minus_one": [
+        3,
+        10,
+        0,
+        0
+      ],
+      "any_minus_one": 13
+    },
+    {
+      "index": 3,
+      "phase": "duplicate",
+      "wheel_index": null,
+      "start_ns": 4755830626694,
+      "end_ns": 4775781054226,
+      "samples": 399,
+      "minus_one": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "any_minus_one": 1
+    },
+    {
+      "index": 4,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 4775781054226,
+      "end_ns": 4795731442805,
+      "samples": 399,
+      "minus_one": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "any_minus_one": 1
+    },
+    {
+      "index": 5,
+      "phase": "old",
+      "wheel_index": null,
+      "start_ns": 4795731442805,
+      "end_ns": 4815681859495,
+      "samples": 399,
+      "minus_one": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "any_minus_one": 4
+    },
+    {
+      "index": 6,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 4815681859495,
+      "end_ns": 4835632377735,
+      "samples": 399,
+      "minus_one": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 0
+    },
+    {
+      "index": 7,
+      "phase": "nan",
+      "wheel_index": 0,
+      "start_ns": 4835632377735,
+      "end_ns": 4855582863910,
+      "samples": 399,
+      "minus_one": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 2
+    },
+    {
+      "index": 8,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 4855582863910,
+      "end_ns": 4875533546392,
+      "samples": 399,
+      "minus_one": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 0
+    },
+    {
+      "index": 9,
+      "phase": "nan",
+      "wheel_index": 1,
+      "start_ns": 4875533546392,
+      "end_ns": 4895484603973,
+      "samples": 399,
+      "minus_one": [
+        6,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 6
+    },
+    {
+      "index": 10,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 4895484603973,
+      "end_ns": 4915435114974,
+      "samples": 399,
+      "minus_one": [
+        4,
+        2,
+        5,
+        0
+      ],
+      "any_minus_one": 8
+    },
+    {
+      "index": 11,
+      "phase": "nan",
+      "wheel_index": 2,
+      "start_ns": 4915435114974,
+      "end_ns": 4935385653681,
+      "samples": 399,
+      "minus_one": [
+        5,
+        0,
+        7,
+        0
+      ],
+      "any_minus_one": 10
+    },
+    {
+      "index": 12,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 4935385653681,
+      "end_ns": 4955336250620,
+      "samples": 399,
+      "minus_one": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 1
+    },
+    {
+      "index": 13,
+      "phase": "nan",
+      "wheel_index": 3,
+      "start_ns": 4955336250620,
+      "end_ns": 4975286701755,
+      "samples": 399,
+      "minus_one": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "any_minus_one": 3
+    },
+    {
+      "index": 14,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 4975286701755,
+      "end_ns": 4995237086125,
+      "samples": 399,
+      "minus_one": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 0
+    },
+    {
+      "index": 15,
+      "phase": "inf",
+      "wheel_index": 0,
+      "start_ns": 4995237086125,
+      "end_ns": 5015187556447,
+      "samples": 399,
+      "minus_one": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 2
+    },
+    {
+      "index": 16,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 5015187556447,
+      "end_ns": 5035137990161,
+      "samples": 399,
+      "minus_one": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "any_minus_one": 2
+    },
+    {
+      "index": 17,
+      "phase": "inf",
+      "wheel_index": 1,
+      "start_ns": 5035137990161,
+      "end_ns": 5055088427502,
+      "samples": 399,
+      "minus_one": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 0
+    },
+    {
+      "index": 18,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 5055088427502,
+      "end_ns": 5075038895890,
+      "samples": 399,
+      "minus_one": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 0
+    },
+    {
+      "index": 19,
+      "phase": "inf",
+      "wheel_index": 2,
+      "start_ns": 5075038895890,
+      "end_ns": 5094989376702,
+      "samples": 399,
+      "minus_one": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 0
+    },
+    {
+      "index": 20,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 5094989376702,
+      "end_ns": 5114939806384,
+      "samples": 399,
+      "minus_one": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 2
+    },
+    {
+      "index": 21,
+      "phase": "inf",
+      "wheel_index": 3,
+      "start_ns": 5114939806384,
+      "end_ns": 5134890269778,
+      "samples": 399,
+      "minus_one": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 1
+    },
+    {
+      "index": 22,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 5134890269778,
+      "end_ns": 5154840747098,
+      "samples": 399,
+      "minus_one": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 2
+    },
+    {
+      "index": 23,
+      "phase": "neg-inf",
+      "wheel_index": 0,
+      "start_ns": 5154840747098,
+      "end_ns": 5174791225004,
+      "samples": 399,
+      "minus_one": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "any_minus_one": 3
+    },
+    {
+      "index": 24,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 5174791225004,
+      "end_ns": 5194741735348,
+      "samples": 399,
+      "minus_one": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 0
+    },
+    {
+      "index": 25,
+      "phase": "neg-inf",
+      "wheel_index": 1,
+      "start_ns": 5194741735348,
+      "end_ns": 5214692181355,
+      "samples": 399,
+      "minus_one": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 0
+    },
+    {
+      "index": 26,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 5214692181355,
+      "end_ns": 5234642718094,
+      "samples": 399,
+      "minus_one": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 4
+    },
+    {
+      "index": 27,
+      "phase": "neg-inf",
+      "wheel_index": 2,
+      "start_ns": 5234642718094,
+      "end_ns": 5254593311032,
+      "samples": 399,
+      "minus_one": [
+        2,
+        0,
+        1,
+        1
+      ],
+      "any_minus_one": 4
+    },
+    {
+      "index": 28,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 5254593311032,
+      "end_ns": 5274543834284,
+      "samples": 399,
+      "minus_one": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 1
+    },
+    {
+      "index": 29,
+      "phase": "neg-inf",
+      "wheel_index": 3,
+      "start_ns": 5274543834284,
+      "end_ns": 5294494386486,
+      "samples": 399,
+      "minus_one": [
+        2,
+        0,
+        0,
+        3
+      ],
+      "any_minus_one": 5
+    },
+    {
+      "index": 30,
+      "phase": "normal",
+      "wheel_index": null,
+      "start_ns": 5294494386486,
+      "end_ns": 5314444926428,
+      "samples": 399,
+      "minus_one": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 4
+    },
+    {
+      "index": 31,
+      "phase": "stale",
+      "wheel_index": null,
+      "start_ns": 5314444926428,
+      "end_ns": 5354778056309,
+      "samples": 807,
+      "minus_one": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "any_minus_one": 4
+    }
+  ],
+  "runs": [
+    {
+      "motor": 1,
+      "start_line": 81,
+      "end_line": 81,
+      "samples": 1,
+      "start_s": 3.999238166,
+      "end_s": 3.999238166,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 104.099043,
+      "phases": [
+        "baseline"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 809,
+      "end_line": 809,
+      "samples": 1,
+      "start_s": 40.401923043,
+      "end_s": 40.401923043,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.090062,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 1131,
+      "end_line": 1131,
+      "samples": 1,
+      "start_s": 56.503061064,
+      "end_s": 56.503061064,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 98.957444,
+      "phases": [
+        "stale"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 1177,
+      "end_line": 1178,
+      "samples": 2,
+      "start_s": 58.808270741,
+      "end_s": 58.854333052,
+      "observed_span_ms": 46.062311,
+      "zero_bracket_ms": 148.984937,
+      "phases": [
+        "stale"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 1383,
+      "end_line": 1383,
+      "samples": 1,
+      "start_s": 69.103840437,
+      "end_s": 69.103840437,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 94.19051,
+      "phases": [
+        "stale"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 1449,
+      "end_line": 1449,
+      "samples": 1,
+      "start_s": 72.404901294,
+      "end_s": 72.404901294,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 98.977899,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 1451,
+      "end_line": 1451,
+      "samples": 1,
+      "start_s": 72.50496225,
+      "end_s": 72.50496225,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.986519,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 1659,
+      "end_line": 1659,
+      "samples": 1,
+      "start_s": 82.906144391,
+      "end_s": 82.906144391,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 101.026011,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 2862,
+      "end_line": 2862,
+      "samples": 1,
+      "start_s": 143.064207739,
+      "end_s": 143.064207739,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.159806,
+      "phases": [
+        "old"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 2868,
+      "end_line": 2868,
+      "samples": 1,
+      "start_s": 143.359289809,
+      "end_s": 143.359289809,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 94.94058,
+      "phases": [
+        "old"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 3572,
+      "end_line": 3572,
+      "samples": 1,
+      "start_s": 178.561374854,
+      "end_s": 178.561374854,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.797819,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 3737,
+      "end_line": 3737,
+      "samples": 1,
+      "start_s": 186.817275621,
+      "end_s": 186.817275621,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.073161,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 4267,
+      "end_line": 4268,
+      "samples": 2,
+      "start_s": 213.317926563,
+      "end_s": 213.364955697,
+      "observed_span_ms": 47.029134,
+      "zero_bracket_ms": 149.913728,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 4272,
+      "end_line": 4274,
+      "samples": 3,
+      "start_s": 213.565086046,
+      "end_s": 213.663962295,
+      "observed_span_ms": 98.876249,
+      "zero_bracket_ms": 199.940172,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 4529,
+      "end_line": 4529,
+      "samples": 1,
+      "start_s": 226.414304677,
+      "end_s": 226.414304677,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.996377,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 4790,
+      "end_line": 4790,
+      "samples": 1,
+      "start_s": 239.466677282,
+      "end_s": 239.466677282,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 101.060947,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 4854,
+      "end_line": 4854,
+      "samples": 1,
+      "start_s": 242.665220591,
+      "end_s": 242.665220591,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 101.048123,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 4886,
+      "end_line": 4886,
+      "samples": 1,
+      "start_s": 244.266313078,
+      "end_s": 244.266313078,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 105.865205,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 4964,
+      "end_line": 4964,
+      "samples": 1,
+      "start_s": 248.165569475,
+      "end_s": 248.165569475,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.055076,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 5139,
+      "end_line": 5140,
+      "samples": 2,
+      "start_s": 256.916466534,
+      "end_s": 256.9675441,
+      "observed_span_ms": 51.077566,
+      "zero_bracket_ms": 150.106518,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 5229,
+      "end_line": 5229,
+      "samples": 1,
+      "start_s": 261.417940194,
+      "end_s": 261.417940194,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.085356,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 5252,
+      "end_line": 5252,
+      "samples": 1,
+      "start_s": 262.568171772,
+      "end_s": 262.568171772,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 101.03934,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 5368,
+      "end_line": 5368,
+      "samples": 1,
+      "start_s": 268.368038331,
+      "end_s": 268.368038331,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 95.525184,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 5785,
+      "end_line": 5785,
+      "samples": 1,
+      "start_s": 289.219022846,
+      "end_s": 289.219022846,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.157361,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 5865,
+      "end_line": 5866,
+      "samples": 2,
+      "start_s": 293.219211718,
+      "end_s": 293.269212764,
+      "observed_span_ms": 50.001046,
+      "zero_bracket_ms": 155.003763,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 7027,
+      "end_line": 7027,
+      "samples": 1,
+      "start_s": 351.32590583,
+      "end_s": 351.32590583,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.917583,
+      "phases": [
+        "inf"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 7030,
+      "end_line": 7030,
+      "samples": 1,
+      "start_s": 351.470911959,
+      "end_s": 351.470911959,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.092177,
+      "phases": [
+        "inf"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 7284,
+      "end_line": 7284,
+      "samples": 1,
+      "start_s": 364.173197593,
+      "end_s": 364.173197593,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.885645,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 8937,
+      "end_line": 8938,
+      "samples": 2,
+      "start_s": 446.831675247,
+      "end_s": 446.876094567,
+      "observed_span_ms": 44.41932,
+      "zero_bracket_ms": 150.034116,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 9403,
+      "end_line": 9403,
+      "samples": 1,
+      "start_s": 470.128043542,
+      "end_s": 470.128043542,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 96.994901,
+      "phases": [
+        "inf"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 9441,
+      "end_line": 9441,
+      "samples": 1,
+      "start_s": 472.027880416,
+      "end_s": 472.027880416,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 104.008175,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 9813,
+      "end_line": 9813,
+      "samples": 1,
+      "start_s": 490.628500139,
+      "end_s": 490.628500139,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 101.161846,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 9828,
+      "end_line": 9828,
+      "samples": 1,
+      "start_s": 491.37759702,
+      "end_s": 491.37759702,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 95.94805,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 11230,
+      "end_line": 11230,
+      "samples": 1,
+      "start_s": 561.481630989,
+      "end_s": 561.481630989,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 101.114282,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 11232,
+      "end_line": 11232,
+      "samples": 1,
+      "start_s": 561.58060502,
+      "end_s": 561.58060502,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 98.986142,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 11241,
+      "end_line": 11241,
+      "samples": 1,
+      "start_s": 562.031587985,
+      "end_s": 562.031587985,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 105.82694,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 11260,
+      "end_line": 11260,
+      "samples": 1,
+      "start_s": 562.979834766,
+      "end_s": 562.979834766,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.949701,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 11510,
+      "end_line": 11510,
+      "samples": 1,
+      "start_s": 575.48071401,
+      "end_s": 575.48071401,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 101.051012,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 11550,
+      "end_line": 11550,
+      "samples": 1,
+      "start_s": 577.481116077,
+      "end_s": 577.481116077,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.204329,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 12092,
+      "end_line": 12092,
+      "samples": 1,
+      "start_s": 604.583117218,
+      "end_s": 604.583117218,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.940175,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 12390,
+      "end_line": 12390,
+      "samples": 1,
+      "start_s": 619.48231729,
+      "end_s": 619.48231729,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 101.056837,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 12564,
+      "end_line": 12564,
+      "samples": 1,
+      "start_s": 628.18326227,
+      "end_s": 628.18326227,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 98.972445,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 12791,
+      "end_line": 12791,
+      "samples": 1,
+      "start_s": 639.533996142,
+      "end_s": 639.533996142,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.058524,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 12815,
+      "end_line": 12815,
+      "samples": 1,
+      "start_s": 640.734009817,
+      "end_s": 640.734009817,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.021324,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 12823,
+      "end_line": 12823,
+      "samples": 1,
+      "start_s": 641.133126375,
+      "end_s": 641.133126375,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 95.988459,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 12895,
+      "end_line": 12895,
+      "samples": 1,
+      "start_s": 644.733316683,
+      "end_s": 644.733316683,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 98.933843,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 13116,
+      "end_line": 13116,
+      "samples": 1,
+      "start_s": 655.783227395,
+      "end_s": 655.783227395,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 102.966668,
+      "phases": [
+        "stale"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 13253,
+      "end_line": 13254,
+      "samples": 2,
+      "start_s": 662.634744091,
+      "end_s": 662.684923775,
+      "observed_span_ms": 50.179684,
+      "zero_bracket_ms": 150.096965,
+      "phases": [
+        "stale"
+      ]
+    },
+    {
+      "motor": 1,
+      "start_line": 13749,
+      "end_line": 13749,
+      "samples": 1,
+      "start_s": 687.434717227,
+      "end_s": 687.434717227,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 98.854068,
+      "phases": [
+        "stale"
+      ]
+    },
+    {
+      "motor": 2,
+      "start_line": 265,
+      "end_line": 265,
+      "samples": 1,
+      "start_s": 13.199541996,
+      "end_s": 13.199541996,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.012747,
+      "phases": [
+        "baseline"
+      ]
+    },
+    {
+      "motor": 2,
+      "start_line": 1621,
+      "end_line": 1622,
+      "samples": 2,
+      "start_s": 81.004974594,
+      "end_s": 81.06135442,
+      "observed_span_ms": 56.379826,
+      "zero_bracket_ms": 149.178368,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 2,
+      "start_line": 1651,
+      "end_line": 1652,
+      "samples": 2,
+      "start_s": 82.506161161,
+      "end_s": 82.556196959,
+      "observed_span_ms": 50.035798,
+      "zero_bracket_ms": 149.971532,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 2,
+      "start_line": 1691,
+      "end_line": 1696,
+      "samples": 6,
+      "start_s": 84.5054078,
+      "end_s": 84.756429452,
+      "observed_span_ms": 251.021652,
+      "zero_bracket_ms": 357.056348,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 2,
+      "start_line": 2817,
+      "end_line": 2818,
+      "samples": 2,
+      "start_s": 140.815011546,
+      "end_s": 140.859041391,
+      "observed_span_ms": 44.029845,
+      "zero_bracket_ms": 149.94785,
+      "phases": [
+        "old"
+      ]
+    },
+    {
+      "motor": 2,
+      "start_line": 4789,
+      "end_line": 4790,
+      "samples": 2,
+      "start_s": 239.415651052,
+      "end_s": 239.466677282,
+      "observed_span_ms": 51.02623,
+      "zero_bracket_ms": 151.033012,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 2,
+      "start_line": 5903,
+      "end_line": 5903,
+      "samples": 1,
+      "start_s": 295.119433,
+      "end_s": 295.119433,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 95.972091,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 2,
+      "start_line": 9926,
+      "end_line": 9926,
+      "samples": 1,
+      "start_s": 496.278168025,
+      "end_s": 496.278168025,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 104.894755,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 2,
+      "start_line": 10058,
+      "end_line": 10058,
+      "samples": 1,
+      "start_s": 502.878545342,
+      "end_s": 502.878545342,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 94.992056,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 3,
+      "start_line": 257,
+      "end_line": 257,
+      "samples": 1,
+      "start_s": 12.804557689,
+      "end_s": 12.804557689,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.050409,
+      "phases": [
+        "baseline"
+      ]
+    },
+    {
+      "motor": 3,
+      "start_line": 4788,
+      "end_line": 4792,
+      "samples": 5,
+      "start_s": 239.365678987,
+      "end_s": 239.565729551,
+      "observed_span_ms": 200.050564,
+      "zero_bracket_ms": 296.133253,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 3,
+      "start_line": 5127,
+      "end_line": 5128,
+      "samples": 2,
+      "start_s": 256.321430719,
+      "end_s": 256.367418603,
+      "observed_span_ms": 45.987884,
+      "zero_bracket_ms": 148.970742,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 3,
+      "start_line": 5138,
+      "end_line": 5142,
+      "samples": 5,
+      "start_s": 256.867497519,
+      "end_s": 257.071565039,
+      "observed_span_ms": 204.06752,
+      "zero_bracket_ms": 296.049803,
+      "phases": [
+        "nan"
+      ]
+    },
+    {
+      "motor": 3,
+      "start_line": 7166,
+      "end_line": 7166,
+      "samples": 1,
+      "start_s": 358.271546271,
+      "end_s": 358.271546271,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 102.990905,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 3,
+      "start_line": 11813,
+      "end_line": 11813,
+      "samples": 1,
+      "start_s": 590.63213118,
+      "end_s": 590.63213118,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.039421,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 608,
+      "end_line": 608,
+      "samples": 1,
+      "start_s": 30.350745766,
+      "end_s": 30.350745766,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 93.866581,
+      "phases": [
+        "baseline"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 627,
+      "end_line": 627,
+      "samples": 1,
+      "start_s": 31.305874313,
+      "end_s": 31.305874313,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.080511,
+      "phases": [
+        "baseline"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 742,
+      "end_line": 742,
+      "samples": 1,
+      "start_s": 37.056551055,
+      "end_s": 37.056551055,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.11551,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 818,
+      "end_line": 818,
+      "samples": 1,
+      "start_s": 40.853152739,
+      "end_s": 40.853152739,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 93.977523,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 988,
+      "end_line": 988,
+      "samples": 1,
+      "start_s": 49.353374345,
+      "end_s": 49.353374345,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 96.837065,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 1135,
+      "end_line": 1135,
+      "samples": 1,
+      "start_s": 56.704098452,
+      "end_s": 56.704098452,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 98.973983,
+      "phases": [
+        "stale"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 1219,
+      "end_line": 1219,
+      "samples": 1,
+      "start_s": 60.903556595,
+      "end_s": 60.903556595,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.909555,
+      "phases": [
+        "stale"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 1874,
+      "end_line": 1874,
+      "samples": 1,
+      "start_s": 93.656519141,
+      "end_s": 93.656519141,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 100.080207,
+      "phases": [
+        "duplicate"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 2321,
+      "end_line": 2321,
+      "samples": 1,
+      "start_s": 116.008126742,
+      "end_s": 116.008126742,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 102.946333,
+      "phases": [
+        "normal"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 11443,
+      "end_line": 11443,
+      "samples": 1,
+      "start_s": 572.131643141,
+      "end_s": 572.131643141,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 96.08193,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 12455,
+      "end_line": 12455,
+      "samples": 1,
+      "start_s": 622.733569027,
+      "end_s": 622.733569027,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.968312,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 12457,
+      "end_line": 12457,
+      "samples": 1,
+      "start_s": 622.836550572,
+      "end_s": 622.836550572,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 99.999906,
+      "phases": [
+        "neg-inf"
+      ]
+    },
+    {
+      "motor": 4,
+      "start_line": 12483,
+      "end_line": 12483,
+      "samples": 1,
+      "start_s": 624.132658107,
+      "end_s": 624.132658107,
+      "observed_span_ms": 0.0,
+      "zero_bracket_ms": 95.026906,
+      "phases": [
+        "neg-inf"
+      ]
+    }
+  ],
+  "motor_diagnostics": [
+    {
+      "motor": 1,
+      "n": 55,
+      "currentA_range": [
+        -0.89,
+        -0.71
+      ],
+      "temperatureC_range": [
+        44.0,
+        45.0
+      ],
+      "diag_rpm_values": [
+        "-1",
+        "0"
+      ],
+      "online": [
+        "true"
+      ],
+      "errorHex": [
+        "0x00"
+      ],
+      "sample_gap_s_range": [
+        12.49628155,
+        12.504524278
+      ],
+      "nearest_diag_abs_offset_s": [
+        0.005862471,
+        3.892971567,
+        6.245632171
+      ],
+      "phase_groups": {
+        "baseline": {
+          "n": 2,
+          "currentA_range": [
+            -0.8,
+            -0.77
+          ],
+          "temperatureC_range": [
+            45.0,
+            45.0
+          ]
+        },
+        "normal": {
+          "n": 26,
+          "currentA_range": [
+            -0.89,
+            -0.71
+          ],
+          "temperatureC_range": [
+            44.0,
+            45.0
+          ]
+        },
+        "stale": {
+          "n": 5,
+          "currentA_range": [
+            -0.8,
+            -0.73
+          ],
+          "temperatureC_range": [
+            45.0,
+            45.0
+          ]
+        },
+        "rejected": {
+          "n": 22,
+          "currentA_range": [
+            -0.88,
+            -0.73
+          ],
+          "temperatureC_range": [
+            44.0,
+            45.0
+          ]
+        }
+      }
+    },
+    {
+      "motor": 2,
+      "n": 55,
+      "currentA_range": [
+        -0.45,
+        -0.3
+      ],
+      "temperatureC_range": [
+        34.0,
+        35.0
+      ],
+      "diag_rpm_values": [
+        "0"
+      ],
+      "online": [
+        "true"
+      ],
+      "errorHex": [
+        "0x00"
+      ],
+      "sample_gap_s_range": [
+        12.496420224,
+        12.50549281
+      ],
+      "nearest_diag_abs_offset_s": [
+        0.355102145,
+        1.328650886,
+        6.054368007
+      ],
+      "phase_groups": {
+        "baseline": {
+          "n": 2,
+          "currentA_range": [
+            -0.32,
+            -0.32
+          ],
+          "temperatureC_range": [
+            35.0,
+            35.0
+          ]
+        },
+        "normal": {
+          "n": 26,
+          "currentA_range": [
+            -0.45,
+            -0.3
+          ],
+          "temperatureC_range": [
+            34.0,
+            35.0
+          ]
+        },
+        "stale": {
+          "n": 5,
+          "currentA_range": [
+            -0.35,
+            -0.33
+          ],
+          "temperatureC_range": [
+            34.0,
+            35.0
+          ]
+        },
+        "rejected": {
+          "n": 22,
+          "currentA_range": [
+            -0.44,
+            -0.3
+          ],
+          "temperatureC_range": [
+            34.0,
+            35.0
+          ]
+        }
+      }
+    },
+    {
+      "motor": 3,
+      "n": 55,
+      "currentA_range": [
+        -0.75,
+        -0.42
+      ],
+      "temperatureC_range": [
+        40.0,
+        40.0
+      ],
+      "diag_rpm_values": [
+        "0"
+      ],
+      "online": [
+        "true"
+      ],
+      "errorHex": [
+        "0x00"
+      ],
+      "sample_gap_s_range": [
+        12.496976217,
+        12.504361222
+      ],
+      "nearest_diag_abs_offset_s": [
+        0.644086207,
+        2.589398179,
+        5.79554372
+      ],
+      "phase_groups": {
+        "baseline": {
+          "n": 2,
+          "currentA_range": [
+            -0.44,
+            -0.44
+          ],
+          "temperatureC_range": [
+            40.0,
+            40.0
+          ]
+        },
+        "normal": {
+          "n": 26,
+          "currentA_range": [
+            -0.74,
+            -0.42
+          ],
+          "temperatureC_range": [
+            40.0,
+            40.0
+          ]
+        },
+        "stale": {
+          "n": 5,
+          "currentA_range": [
+            -0.68,
+            -0.42
+          ],
+          "temperatureC_range": [
+            40.0,
+            40.0
+          ]
+        },
+        "rejected": {
+          "n": 22,
+          "currentA_range": [
+            -0.75,
+            -0.5
+          ],
+          "temperatureC_range": [
+            40.0,
+            40.0
+          ]
+        }
+      }
+    },
+    {
+      "motor": 4,
+      "n": 55,
+      "currentA_range": [
+        -0.78,
+        -0.39
+      ],
+      "temperatureC_range": [
+        40.0,
+        41.0
+      ],
+      "diag_rpm_values": [
+        "0"
+      ],
+      "online": [
+        "true"
+      ],
+      "errorHex": [
+        "0x00"
+      ],
+      "sample_gap_s_range": [
+        12.496866127,
+        12.50407988
+      ],
+      "nearest_diag_abs_offset_s": [
+        0.207089777,
+        2.658201925,
+        6.044752775
+      ],
+      "phase_groups": {
+        "baseline": {
+          "n": 2,
+          "currentA_range": [
+            -0.61,
+            -0.6
+          ],
+          "temperatureC_range": [
+            40.0,
+            40.0
+          ]
+        },
+        "normal": {
+          "n": 26,
+          "currentA_range": [
+            -0.76,
+            -0.45
+          ],
+          "temperatureC_range": [
+            40.0,
+            41.0
+          ]
+        },
+        "stale": {
+          "n": 5,
+          "currentA_range": [
+            -0.73,
+            -0.54
+          ],
+          "temperatureC_range": [
+            40.0,
+            41.0
+          ]
+        },
+        "rejected": {
+          "n": 22,
+          "currentA_range": [
+            -0.78,
+            -0.39
+          ],
+          "temperatureC_range": [
+            40.0,
+            41.0
+          ]
+        }
+      }
+    }
+  ],
+  "nearest_diagnostics": [
+    {
+      "motor": 1,
+      "rpm_time_s": 3.999238166,
+      "nearest_diagnostic_offset_s": 3.892971567,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.77",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 40.401923043,
+      "nearest_diagnostic_offset_s": 4.995818553,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.75",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 56.503061064,
+      "nearest_diagnostic_offset_s": 1.395200207,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.75",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 58.808270741,
+      "nearest_diagnostic_offset_s": -0.91000947,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.75",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 58.854333052,
+      "nearest_diagnostic_offset_s": -0.956071781,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.75",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 69.103840437,
+      "nearest_diagnostic_offset_s": 1.297002095,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.73",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 72.404901294,
+      "nearest_diagnostic_offset_s": -2.004058762,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.73",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 72.50496225,
+      "nearest_diagnostic_offset_s": -2.104119718,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.73",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 82.906144391,
+      "nearest_diagnostic_offset_s": -0.005862471,
+      "values": {
+        "online": "true",
+        "rpm": "-1",
+        "currentA": "-0.71",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 143.064207739,
+      "nearest_diagnostic_offset_s": 2.342421362,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.74",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 143.359289809,
+      "nearest_diagnostic_offset_s": 2.047339292,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.74",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 178.561374854,
+      "nearest_diagnostic_offset_s": 4.344358533,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.79",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 186.817275621,
+      "nearest_diagnostic_offset_s": -3.911542234,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.79",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 213.317926563,
+      "nearest_diagnostic_offset_s": -5.409195335,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.85",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 213.364955697,
+      "nearest_diagnostic_offset_s": -5.456224469,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.85",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 213.565086046,
+      "nearest_diagnostic_offset_s": -5.656354818,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.85",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 213.613971502,
+      "nearest_diagnostic_offset_s": -5.705240274,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.85",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 213.663962295,
+      "nearest_diagnostic_offset_s": -5.755231067,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.85",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 226.414304677,
+      "nearest_diagnostic_offset_s": -6.003547942,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.86",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 239.466677282,
+      "nearest_diagnostic_offset_s": 5.945726375,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 242.665220591,
+      "nearest_diagnostic_offset_s": 2.747183066,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 244.266313078,
+      "nearest_diagnostic_offset_s": 1.146090579,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 248.165569475,
+      "nearest_diagnostic_offset_s": -2.753165818,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 256.916466534,
+      "nearest_diagnostic_offset_s": 0.995174725,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.81",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 256.9675441,
+      "nearest_diagnostic_offset_s": 0.944097159,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.81",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 261.417940194,
+      "nearest_diagnostic_offset_s": -3.506298935,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.81",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 262.568171772,
+      "nearest_diagnostic_offset_s": -4.656530513,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.81",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 268.368038331,
+      "nearest_diagnostic_offset_s": 2.046053904,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.79",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 289.219022846,
+      "nearest_diagnostic_offset_s": 6.195535079,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 293.219211718,
+      "nearest_diagnostic_offset_s": 2.195346207,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 293.269212764,
+      "nearest_diagnostic_offset_s": 2.145345161,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "44",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 351.32590583,
+      "nearest_diagnostic_offset_s": -5.908575725,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.82",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 351.470911959,
+      "nearest_diagnostic_offset_s": -6.053581854,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.82",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 364.173197593,
+      "nearest_diagnostic_offset_s": 6.245632171,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.83",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 446.831675247,
+      "nearest_diagnostic_offset_s": -1.408105797,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.89",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 446.876094567,
+      "nearest_diagnostic_offset_s": -1.452525117,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.89",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 470.128043542,
+      "nearest_diagnostic_offset_s": 0.295980177,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.85",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 472.027880416,
+      "nearest_diagnostic_offset_s": -1.603856697,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.85",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 490.628500139,
+      "nearest_diagnostic_offset_s": 4.795619492,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.79",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 491.37759702,
+      "nearest_diagnostic_offset_s": 4.046522611,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.79",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 561.481630989,
+      "nearest_diagnostic_offset_s": -3.556335242,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 561.58060502,
+      "nearest_diagnostic_offset_s": -3.655309273,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 562.031587985,
+      "nearest_diagnostic_offset_s": -4.106292238,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 562.979834766,
+      "nearest_diagnostic_offset_s": -5.054539019,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 575.48071401,
+      "nearest_diagnostic_offset_s": -5.053388701,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.85",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 577.481116077,
+      "nearest_diagnostic_offset_s": 5.445264842,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.86",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 604.583117218,
+      "nearest_diagnostic_offset_s": 3.343397111,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.87",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 619.48231729,
+      "nearest_diagnostic_offset_s": 0.946283699,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.86",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 628.18326227,
+      "nearest_diagnostic_offset_s": 4.74327962,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.88",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 639.533996142,
+      "nearest_diagnostic_offset_s": 5.895421707,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 640.734009817,
+      "nearest_diagnostic_offset_s": 4.695408032,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 641.133126375,
+      "nearest_diagnostic_offset_s": 4.296291474,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 644.733316683,
+      "nearest_diagnostic_offset_s": 0.696101166,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.84",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 655.783227395,
+      "nearest_diagnostic_offset_s": 2.145348829,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.80",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 662.634744091,
+      "nearest_diagnostic_offset_s": -4.706167867,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.80",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 662.684923775,
+      "nearest_diagnostic_offset_s": -4.756347551,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.80",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 1,
+      "rpm_time_s": 687.434717227,
+      "nearest_diagnostic_offset_s": -4.506031167,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.78",
+        "temperatureC": "45",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 13.199541996,
+      "nearest_diagnostic_offset_s": -4.80346242,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.32",
+        "temperatureC": "35",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 81.004974594,
+      "nearest_diagnostic_offset_s": 2.397344716,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.34",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 81.06135442,
+      "nearest_diagnostic_offset_s": 2.34096489,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.34",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 82.506161161,
+      "nearest_diagnostic_offset_s": 0.896158149,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.34",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 82.556196959,
+      "nearest_diagnostic_offset_s": 0.846122351,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.34",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 84.5054078,
+      "nearest_diagnostic_offset_s": -1.10308849,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.34",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 84.555424381,
+      "nearest_diagnostic_offset_s": -1.153105071,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.34",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 84.606381192,
+      "nearest_diagnostic_offset_s": -1.204061882,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.34",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 84.656469722,
+      "nearest_diagnostic_offset_s": -1.254150412,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.34",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 84.70551094,
+      "nearest_diagnostic_offset_s": -1.30319163,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.34",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 84.756429452,
+      "nearest_diagnostic_offset_s": -1.354110142,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.34",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 140.815011546,
+      "nearest_diagnostic_offset_s": 5.088553855,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.31",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 140.859041391,
+      "nearest_diagnostic_offset_s": 5.04452401,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.31",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 239.415651052,
+      "nearest_diagnostic_offset_s": -6.003341777,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.30",
+        "temperatureC": "35",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 239.466677282,
+      "nearest_diagnostic_offset_s": -6.054368007,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.30",
+        "temperatureC": "35",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 295.119433,
+      "nearest_diagnostic_offset_s": 0.794252523,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.36",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 496.278168025,
+      "nearest_diagnostic_offset_s": -0.355102145,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.43",
+        "temperatureC": "35",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 2,
+      "rpm_time_s": 502.878545342,
+      "nearest_diagnostic_offset_s": 5.545796384,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.36",
+        "temperatureC": "34",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 12.804557689,
+      "nearest_diagnostic_offset_s": -3.910227827,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.44",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 239.365678987,
+      "nearest_diagnostic_offset_s": -5.456402593,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.64",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 239.415651052,
+      "nearest_diagnostic_offset_s": -5.506374658,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.64",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 239.466677282,
+      "nearest_diagnostic_offset_s": -5.557400888,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.64",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 239.516711999,
+      "nearest_diagnostic_offset_s": -5.607435605,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.64",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 239.565729551,
+      "nearest_diagnostic_offset_s": -5.656453157,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.64",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 256.321430719,
+      "nearest_diagnostic_offset_s": 2.589398179,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 256.367418603,
+      "nearest_diagnostic_offset_s": 2.543410295,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 256.867497519,
+      "nearest_diagnostic_offset_s": 2.043331379,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 256.916466534,
+      "nearest_diagnostic_offset_s": 1.994362364,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 256.9675441,
+      "nearest_diagnostic_offset_s": 1.943284798,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 257.017604037,
+      "nearest_diagnostic_offset_s": 1.893224861,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 257.071565039,
+      "nearest_diagnostic_offset_s": 1.839263859,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 358.271546271,
+      "nearest_diagnostic_offset_s": 0.644086207,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.63",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 3,
+      "rpm_time_s": 590.63213118,
+      "nearest_diagnostic_offset_s": 5.79554372,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.68",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 30.350745766,
+      "nearest_diagnostic_offset_s": 4.047603364,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 31.305874313,
+      "nearest_diagnostic_offset_s": 3.092474817,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 37.056551055,
+      "nearest_diagnostic_offset_s": -2.658201925,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 40.853152739,
+      "nearest_diagnostic_offset_s": 6.044752775,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 49.353374345,
+      "nearest_diagnostic_offset_s": -2.455468831,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.58",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 56.704098452,
+      "nearest_diagnostic_offset_s": 2.69641624,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.59",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 60.903556595,
+      "nearest_diagnostic_offset_s": -1.503041903,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.59",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 93.656519141,
+      "nearest_diagnostic_offset_s": 3.244394401,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.39",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 116.008126742,
+      "nearest_diagnostic_offset_s": 5.894700491,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.46",
+        "temperatureC": "40",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 572.131643141,
+      "nearest_diagnostic_offset_s": -0.207089777,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.73",
+        "temperatureC": "41",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 622.733569027,
+      "nearest_diagnostic_offset_s": -0.806045103,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.78",
+        "temperatureC": "41",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 622.836550572,
+      "nearest_diagnostic_offset_s": -0.909026648,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.78",
+        "temperatureC": "41",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    },
+    {
+      "motor": 4,
+      "rpm_time_s": 624.132658107,
+      "nearest_diagnostic_offset_s": -2.205134183,
+      "values": {
+        "online": "true",
+        "rpm": "0",
+        "currentA": "-0.78",
+        "temperatureC": "41",
+        "errorHex": "0x00",
+        "mode": "0x02"
+      }
+    }
+  ],
+  "counters": {
+    "pico_b/motor_latency_12/M1_latencyLastUs": {
+      "first": 2409,
+      "first_s": 0.395148133,
+      "n": 56,
+      "min": 2004,
+      "max": 3210,
+      "last": 2464,
+      "last_s": 687.929007847,
+      "delta": 55
+    },
+    "pico_b/motor_latency_12/M1_latencyMaxUs": {
+      "first": 2909,
+      "first_s": 0.395148133,
+      "n": 56,
+      "min": 2004,
+      "max": 3454,
+      "last": 2464,
+      "last_s": 687.929007847,
+      "delta": -445
+    },
+    "pico_b/motor_latency_12/M2_latencyLastUs": {
+      "first": 2248,
+      "first_s": 0.395148133,
+      "n": 56,
+      "min": 1978,
+      "max": 3230,
+      "last": 2909,
+      "last_s": 687.929007847,
+      "delta": 661
+    },
+    "pico_b/motor_latency_12/M2_latencyMaxUs": {
+      "first": 3015,
+      "first_s": 0.395148133,
+      "n": 56,
+      "min": 2144,
+      "max": 3731,
+      "last": 2909,
+      "last_s": 687.929007847,
+      "delta": -106
+    },
+    "pico_b/motor_latency_34/M3_latencyLastUs": {
+      "first": 2747,
+      "first_s": 0.893122857,
+      "n": 56,
+      "min": 2017,
+      "max": 3711,
+      "last": 2153,
+      "last_s": 688.430979795,
+      "delta": -594
+    },
+    "pico_b/motor_latency_34/M3_latencyMaxUs": {
+      "first": 3009,
+      "first_s": 0.893122857,
+      "n": 56,
+      "min": 2378,
+      "max": 3711,
+      "last": 3001,
+      "last_s": 688.430979795,
+      "delta": -8
+    },
+    "pico_b/motor_latency_34/M4_latencyLastUs": {
+      "first": 2167,
+      "first_s": 0.893122857,
+      "n": 56,
+      "min": 2024,
+      "max": 3005,
+      "last": 2845,
+      "last_s": 688.430979795,
+      "delta": 678
+    },
+    "pico_b/motor_latency_34/M4_latencyMaxUs": {
+      "first": 3014,
+      "first_s": 0.893122857,
+      "n": 56,
+      "min": 2065,
+      "max": 3256,
+      "last": 3056,
+      "last_s": 688.430979795,
+      "delta": 42
+    },
+    "pico_b/motor_temperature_schedule/tempScheduleMissCount": {
+      "first": 28,
+      "first_s": 1.394288476,
+      "n": 56,
+      "min": 28,
+      "max": 73,
+      "last": 73,
+      "last_s": 688.927988375,
+      "delta": 45
+    },
+    "pico_b/motor_scheduler/motorSlotMissCount": {
+      "first": 24,
+      "first_s": 1.893287228,
+      "n": 56,
+      "min": 24,
+      "max": 24,
+      "last": 24,
+      "last_s": 689.433025994,
+      "delta": 0
+    },
+    "pico_b/motor_scheduler/motorSlotLatenessMaxUs": {
+      "first": 121856,
+      "first_s": 1.893287228,
+      "n": 56,
+      "min": 121856,
+      "max": 121856,
+      "last": 121856,
+      "last_s": 689.433025994,
+      "delta": 0
+    },
+    "pico_b/motor_transaction_guard/tempStartLatenessMaxUs": {
+      "first": 1533,
+      "first_s": 2.395309843,
+      "n": 56,
+      "min": 1533,
+      "max": 1533,
+      "last": 1533,
+      "last_s": 689.928922638,
+      "delta": 0
+    },
+    "pico_b/motor_transaction_guard/lastOfflineMotorId": {
+      "first": 0,
+      "first_s": 2.395309843,
+      "n": 56,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 689.928922638,
+      "delta": 0
+    },
+    "pico_b/micro_ros/reconnectCount": {
+      "first": 0,
+      "first_s": 6.39586793,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 681.430553051,
+      "delta": 0
+    },
+    "pico_b/motor_comm_12/M1_crc": {
+      "first": 0,
+      "first_s": 9.894199382,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 684.92766497,
+      "delta": 0
+    },
+    "pico_b/motor_comm_12/M1_timeout": {
+      "first": 0,
+      "first_s": 9.894199382,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 684.92766497,
+      "delta": 0
+    },
+    "pico_b/motor_comm_12/M1_wrongId": {
+      "first": 0,
+      "first_s": 9.894199382,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 684.92766497,
+      "delta": 0
+    },
+    "pico_b/motor_comm_12/M2_crc": {
+      "first": 0,
+      "first_s": 9.894199382,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 684.92766497,
+      "delta": 0
+    },
+    "pico_b/motor_comm_12/M2_timeout": {
+      "first": 0,
+      "first_s": 9.894199382,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 684.92766497,
+      "delta": 0
+    },
+    "pico_b/motor_comm_12/M2_wrongId": {
+      "first": 0,
+      "first_s": 9.894199382,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 684.92766497,
+      "delta": 0
+    },
+    "pico_b/motor_comm_34/M3_crc": {
+      "first": 0,
+      "first_s": 10.394358208,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.431631598,
+      "delta": 0
+    },
+    "pico_b/motor_comm_34/M3_timeout": {
+      "first": 0,
+      "first_s": 10.394358208,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.431631598,
+      "delta": 0
+    },
+    "pico_b/motor_comm_34/M3_wrongId": {
+      "first": 0,
+      "first_s": 10.394358208,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.431631598,
+      "delta": 0
+    },
+    "pico_b/motor_comm_34/M4_crc": {
+      "first": 0,
+      "first_s": 10.394358208,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.431631598,
+      "delta": 0
+    },
+    "pico_b/motor_comm_34/M4_timeout": {
+      "first": 0,
+      "first_s": 10.394358208,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.431631598,
+      "delta": 0
+    },
+    "pico_b/motor_comm_34/M4_wrongId": {
+      "first": 0,
+      "first_s": 10.394358208,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.431631598,
+      "delta": 0
+    },
+    "pico_b/motor_detail_1_fl/speedTimeout": {
+      "first": 0,
+      "first_s": 10.894287172,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.928821533,
+      "delta": 0
+    },
+    "pico_b/motor_detail_1_fl/temperatureTimeout": {
+      "first": 0,
+      "first_s": 10.894287172,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.928821533,
+      "delta": 0
+    },
+    "pico_b/motor_detail_1_fl/speedCrcError": {
+      "first": 0,
+      "first_s": 10.894287172,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.928821533,
+      "delta": 0
+    },
+    "pico_b/motor_detail_1_fl/temperatureCrcError": {
+      "first": 0,
+      "first_s": 10.894287172,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.928821533,
+      "delta": 0
+    },
+    "pico_b/motor_detail_1_fl/lateResponseCount": {
+      "first": 0,
+      "first_s": 10.894287172,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 685.928821533,
+      "delta": 0
+    },
+    "pico_b/motor_detail_2_rl/speedTimeout": {
+      "first": 0,
+      "first_s": 11.396440157,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 686.432740142,
+      "delta": 0
+    },
+    "pico_b/motor_detail_2_rl/temperatureTimeout": {
+      "first": 0,
+      "first_s": 11.396440157,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 686.432740142,
+      "delta": 0
+    },
+    "pico_b/motor_detail_2_rl/speedCrcError": {
+      "first": 0,
+      "first_s": 11.396440157,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 686.432740142,
+      "delta": 0
+    },
+    "pico_b/motor_detail_2_rl/temperatureCrcError": {
+      "first": 0,
+      "first_s": 11.396440157,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 686.432740142,
+      "delta": 0
+    },
+    "pico_b/motor_detail_2_rl/lateResponseCount": {
+      "first": 0,
+      "first_s": 11.396440157,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 686.432740142,
+      "delta": 0
+    },
+    "pico_b/motor_detail_3_fr/speedTimeout": {
+      "first": 0,
+      "first_s": 11.893721219,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 686.928866513,
+      "delta": 0
+    },
+    "pico_b/motor_detail_3_fr/temperatureTimeout": {
+      "first": 0,
+      "first_s": 11.893721219,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 686.928866513,
+      "delta": 0
+    },
+    "pico_b/motor_detail_3_fr/speedCrcError": {
+      "first": 0,
+      "first_s": 11.893721219,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 686.928866513,
+      "delta": 0
+    },
+    "pico_b/motor_detail_3_fr/temperatureCrcError": {
+      "first": 0,
+      "first_s": 11.893721219,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 686.928866513,
+      "delta": 0
+    },
+    "pico_b/motor_detail_3_fr/lateResponseCount": {
+      "first": 0,
+      "first_s": 11.893721219,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 686.928866513,
+      "delta": 0
+    },
+    "pico_b/motor_detail_4_rr/speedTimeout": {
+      "first": 0,
+      "first_s": 12.39575433,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 687.430097368,
+      "delta": 0
+    },
+    "pico_b/motor_detail_4_rr/temperatureTimeout": {
+      "first": 0,
+      "first_s": 12.39575433,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 687.430097368,
+      "delta": 0
+    },
+    "pico_b/motor_detail_4_rr/speedCrcError": {
+      "first": 0,
+      "first_s": 12.39575433,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 687.430097368,
+      "delta": 0
+    },
+    "pico_b/motor_detail_4_rr/temperatureCrcError": {
+      "first": 0,
+      "first_s": 12.39575433,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 687.430097368,
+      "delta": 0
+    },
+    "pico_b/motor_detail_4_rr/lateResponseCount": {
+      "first": 0,
+      "first_s": 12.39575433,
+      "n": 55,
+      "min": 0,
+      "max": 0,
+      "last": 0,
+      "last_s": 687.430097368,
+      "delta": 0
+    }
+  },
+  "history_20260930_233713": [
+    {
+      "motor": 1,
+      "n": 1201,
+      "minus_one": 14,
+      "percent": 1.1656952539550374,
+      "run_lengths": {
+        "3": 1,
+        "4": 1,
+        "2": 1,
+        "5": 1
+      },
+      "max_span_ms": 201.01681699998153
+    },
+    {
+      "motor": 2,
+      "n": 1201,
+      "minus_one": 20,
+      "percent": 1.665278934221482,
+      "run_lengths": {
+        "4": 2,
+        "6": 1,
+        "5": 1,
+        "1": 1
+      },
+      "max_span_ms": 249.9987159999364
+    },
+    {
+      "motor": 3,
+      "n": 1201,
+      "minus_one": 1,
+      "percent": 0.08326394671107411,
+      "run_lengths": {
+        "1": 1
+      },
+      "max_span_ms": 0.0
+    },
+    {
+      "motor": 4,
+      "n": 1201,
+      "minus_one": 1,
+      "percent": 0.08326394671107411,
+      "run_lengths": {
+        "1": 1
+      },
+      "max_span_ms": 0.0
+    }
+  ],
+  "decode_function_unchanged": true,
+  "feedback_store_function_unchanged": true,
+  "input_sha256": {
+    "wheel_command_checks/live_20261001_031602/rpm.jsonl": "587ca62931fa648d747c92b4e9baa167d6e4de170b59d1af95790c72a26faae4",
+    "wheel_command_checks/live_20261001_031602/diagnostics.jsonl": "0061af448257a5e52a1ef9bbb6e03b9dcbf4e8a310b391b08fe28e408aa3656e",
+    "wheel_command_checks/live_20261001_031602/publisher.jsonl": "664bf1905cb1a6e28c11a0636be96629cc19042d28f529abf9079db536df77f7",
+    "wheel_command_checks/laptop_pico_b_node_app.cpp": "bc93062c2434f837aa35638d3c53284a2bb75e402fb98b170b43e0694058b5ee",
+    "PICO_B_MICROROS_CONTROL_NODE/pico_b_node_app.cpp": "7c486db9afec214260a7745f7f5e51b28ba916d36da63c9ade4b7faab670559c"
+  }
+}

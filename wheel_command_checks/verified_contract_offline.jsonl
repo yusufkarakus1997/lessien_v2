@@ -1,0 +1,96 @@
+{"mode": "OFFLINE_NO_DDS", "msg_sha256": "cb0405a45866b3cc63c502e0e726fe0fb00bdeaa425f7eb4874accd595472d6b", "session": 2026100101, "version": 1, "hz": 20, "topic": "/pico_b/wheel_commands", "source_time_mapping_verified": false, "firmware_readme_sha256": "edcbea8b530a7dee529298f1392c489ecb3881ab9d16dc3b23449251a0be2538"}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497769921634}
+{"phase": "normal", "sequence": 100, "sample_time_unix_us": 1790812598260052, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497817940893}
+{"phase": "normal", "sequence": 101, "sample_time_unix_us": 1790812598308163, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497818174386}
+{"event": "phase_start", "phase": "stale", "wheel_index": null, "monotonic_ns": 3497818228070}
+{"event": "silent_interval", "seconds": 20.0}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497818264476}
+{"phase": "normal", "sequence": 102, "sample_time_unix_us": 1790812598308372, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497818339807}
+{"phase": "normal", "sequence": 103, "sample_time_unix_us": 1790812598308456, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497818416194}
+{"event": "phase_start", "phase": "duplicate", "wheel_index": null, "monotonic_ns": 3497818446693}
+{"phase": "duplicate", "sequence": 103, "sample_time_unix_us": 1790812598308552, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497818518043}
+{"phase": "duplicate", "sequence": 103, "sample_time_unix_us": 1790812598308634, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497818591300}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497818622262}
+{"phase": "normal", "sequence": 104, "sample_time_unix_us": 1790812598308727, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497818681149}
+{"phase": "normal", "sequence": 105, "sample_time_unix_us": 1790812598308796, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497818748685}
+{"event": "phase_start", "phase": "old", "wheel_index": null, "monotonic_ns": 3497818776424}
+{"phase": "old", "sequence": 104, "sample_time_unix_us": 1790812598308883, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497818849774}
+{"phase": "old", "sequence": 104, "sample_time_unix_us": 1790812598308968, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497818923124}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497818954604}
+{"phase": "normal", "sequence": 106, "sample_time_unix_us": 1790812598309059, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819026195}
+{"phase": "normal", "sequence": 107, "sample_time_unix_us": 1790812598309148, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819106248}
+{"event": "phase_start", "phase": "nan", "wheel_index": 0, "monotonic_ns": 3497819139062}
+{"phase": "nan", "sequence": 108, "sample_time_unix_us": 1790812598309247, "velocity_rad_s": ["nan", 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819203634}
+{"phase": "nan", "sequence": 109, "sample_time_unix_us": 1790812598309321, "velocity_rad_s": ["nan", 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819275373}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497819304928}
+{"phase": "normal", "sequence": 110, "sample_time_unix_us": 1790812598309411, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819363759}
+{"phase": "normal", "sequence": 111, "sample_time_unix_us": 1790812598309477, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819435461}
+{"event": "phase_start", "phase": "nan", "wheel_index": 1, "monotonic_ns": 3497819479997}
+{"phase": "nan", "sequence": 112, "sample_time_unix_us": 1790812598309585, "velocity_rad_s": [0.1, "nan", 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819539958}
+{"phase": "nan", "sequence": 113, "sample_time_unix_us": 1790812598309654, "velocity_rad_s": [0.1, "nan", 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819606086}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497819634863}
+{"phase": "normal", "sequence": 114, "sample_time_unix_us": 1790812598309739, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819691083}
+{"phase": "normal", "sequence": 115, "sample_time_unix_us": 1790812598309805, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819755692}
+{"event": "phase_start", "phase": "nan", "wheel_index": 2, "monotonic_ns": 3497819782618}
+{"phase": "nan", "sequence": 116, "sample_time_unix_us": 1790812598309888, "velocity_rad_s": [0.1, 0.2, "nan", 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819840394}
+{"phase": "nan", "sequence": 117, "sample_time_unix_us": 1790812598309955, "velocity_rad_s": [0.1, 0.2, "nan", 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497819916336}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497819945076}
+{"phase": "normal", "sequence": 118, "sample_time_unix_us": 1790812598310051, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820010981}
+{"phase": "normal", "sequence": 119, "sample_time_unix_us": 1790812598310127, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820080276}
+{"event": "phase_start", "phase": "nan", "wheel_index": 3, "monotonic_ns": 3497820111238}
+{"phase": "nan", "sequence": 120, "sample_time_unix_us": 1790812598310216, "velocity_rad_s": [0.1, 0.2, 0.3, "nan"], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820169273}
+{"phase": "nan", "sequence": 121, "sample_time_unix_us": 1790812598310282, "velocity_rad_s": [0.1, 0.2, 0.3, "nan"], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820234049}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497820262715}
+{"phase": "normal", "sequence": 122, "sample_time_unix_us": 1790812598310366, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820317158}
+{"phase": "normal", "sequence": 123, "sample_time_unix_us": 1790812598310430, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820379211}
+{"event": "phase_start", "phase": "inf", "wheel_index": 0, "monotonic_ns": 3497820406340}
+{"phase": "inf", "sequence": 124, "sample_time_unix_us": 1790812598310512, "velocity_rad_s": ["inf", 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820463505}
+{"phase": "inf", "sequence": 125, "sample_time_unix_us": 1790812598310577, "velocity_rad_s": ["inf", 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820526578}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497820560725}
+{"phase": "normal", "sequence": 126, "sample_time_unix_us": 1790812598310664, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820616964}
+{"phase": "normal", "sequence": 127, "sample_time_unix_us": 1790812598310729, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820677999}
+{"event": "phase_start", "phase": "inf", "wheel_index": 1, "monotonic_ns": 3497820705795}
+{"phase": "inf", "sequence": 128, "sample_time_unix_us": 1790812598310810, "velocity_rad_s": [0.1, "inf", 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820760497}
+{"phase": "inf", "sequence": 129, "sample_time_unix_us": 1790812598310873, "velocity_rad_s": [0.1, "inf", 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820823236}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497820858883}
+{"phase": "normal", "sequence": 130, "sample_time_unix_us": 1790812598310963, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820914937}
+{"phase": "normal", "sequence": 131, "sample_time_unix_us": 1790812598311028, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497820976768}
+{"event": "phase_start", "phase": "inf", "wheel_index": 2, "monotonic_ns": 3497821014841}
+{"phase": "inf", "sequence": 132, "sample_time_unix_us": 1790812598311124, "velocity_rad_s": [0.1, 0.2, "inf", 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821077562}
+{"phase": "inf", "sequence": 133, "sample_time_unix_us": 1790812598311193, "velocity_rad_s": [0.1, 0.2, "inf", 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821142115}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497821169189}
+{"phase": "normal", "sequence": 134, "sample_time_unix_us": 1790812598311273, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821221224}
+{"phase": "normal", "sequence": 135, "sample_time_unix_us": 1790812598311334, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821284389}
+{"event": "phase_start", "phase": "inf", "wheel_index": 3, "monotonic_ns": 3497821319814}
+{"phase": "inf", "sequence": 136, "sample_time_unix_us": 1790812598311424, "velocity_rad_s": [0.1, 0.2, 0.3, "inf"], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821380997}
+{"phase": "inf", "sequence": 137, "sample_time_unix_us": 1790812598311494, "velocity_rad_s": [0.1, 0.2, 0.3, "inf"], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821447514}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497821475643}
+{"phase": "normal", "sequence": 138, "sample_time_unix_us": 1790812598311579, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821532937}
+{"phase": "normal", "sequence": 139, "sample_time_unix_us": 1790812598311654, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821608620}
+{"event": "phase_start", "phase": "neg-inf", "wheel_index": 0, "monotonic_ns": 3497821636527}
+{"phase": "neg-inf", "sequence": 140, "sample_time_unix_us": 1790812598311741, "velocity_rad_s": ["-inf", 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821693822}
+{"phase": "neg-inf", "sequence": 141, "sample_time_unix_us": 1790812598311807, "velocity_rad_s": ["-inf", 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821760209}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497821787393}
+{"phase": "normal", "sequence": 142, "sample_time_unix_us": 1790812598311891, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821851817}
+{"phase": "normal", "sequence": 143, "sample_time_unix_us": 1790812598311964, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497821916982}
+{"event": "phase_start", "phase": "neg-inf", "wheel_index": 1, "monotonic_ns": 3497821943833}
+{"phase": "neg-inf", "sequence": 144, "sample_time_unix_us": 1790812598312048, "velocity_rad_s": [0.1, "-inf", 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822007775}
+{"phase": "neg-inf", "sequence": 145, "sample_time_unix_us": 1790812598312124, "velocity_rad_s": [0.1, "-inf", 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822079810}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497822116772}
+{"phase": "normal", "sequence": 146, "sample_time_unix_us": 1790812598312221, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822175345}
+{"phase": "normal", "sequence": 147, "sample_time_unix_us": 1790812598312288, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822239732}
+{"event": "phase_start", "phase": "neg-inf", "wheel_index": 2, "monotonic_ns": 3497822275212}
+{"phase": "neg-inf", "sequence": 148, "sample_time_unix_us": 1790812598312380, "velocity_rad_s": [0.1, 0.2, "-inf", 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822333433}
+{"phase": "neg-inf", "sequence": 149, "sample_time_unix_us": 1790812598312449, "velocity_rad_s": [0.1, 0.2, "-inf", 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822409597}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497822438411}
+{"phase": "normal", "sequence": 150, "sample_time_unix_us": 1790812598312542, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822494465}
+{"phase": "normal", "sequence": 151, "sample_time_unix_us": 1790812598312606, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822556871}
+{"event": "phase_start", "phase": "neg-inf", "wheel_index": 3, "monotonic_ns": 3497822584796}
+{"phase": "neg-inf", "sequence": 152, "sample_time_unix_us": 1790812598312689, "velocity_rad_s": [0.1, 0.2, 0.3, "-inf"], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822639757}
+{"phase": "neg-inf", "sequence": 153, "sample_time_unix_us": 1790812598312754, "velocity_rad_s": [0.1, 0.2, 0.3, "-inf"], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822704626}
+{"event": "phase_start", "phase": "normal", "wheel_index": null, "monotonic_ns": 3497822732477}
+{"phase": "normal", "sequence": 154, "sample_time_unix_us": 1790812598312836, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822785679}
+{"phase": "normal", "sequence": 155, "sample_time_unix_us": 1790812598312898, "velocity_rad_s": [0.1, 0.2, 0.3, 0.4], "cdr_bytes": 60, "sent": false, "monotonic_ns": 3497822847159}
+{"event": "phase_start", "phase": "stale", "wheel_index": null, "monotonic_ns": 3497822873787}
+{"event": "silent_interval", "seconds": 20.0}
+{"event": "complete", "messages": 60, "published": false}

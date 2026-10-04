@@ -1,0 +1,72 @@
+# ============================================================
+# LESSIEN workspace .gitignore
+# Checkpoint: B5H production baseline + CH10 trip reset
+# ============================================================
+
+# --- ROS2 / colcon build artifacts ---
+build/
+install/
+log/
+
+# --- Python caches / virtualenvs ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+ENV/
+
+# --- Arduino / Pico build temp staging dirs ---
+build_pico_*/
+tmp/
+temp/
+.tmp/
+
+# --- Binary firmware artifacts (SHA recorded in docs) ---
+# Pico B5H reference SHA (NOT tracked as binary):
+#   UF2  = 7f6a2e2f037a11ea77ad75e15f54494c31c066b8fa0a0fc4f64ffca084f92188
+#   ELF  = a1258da93d2b1fc76e3c734b52d52109b3436a1378cded36aa48d3b99d6dbb3b
+*.uf2
+*.elf
+*.bin
+*.hex
+*.a
+*.o
+*.so
+*.dSYM/
+
+# --- Micro-ROS / RP2350 toolchains dir: PRESERVE source/scripts/config/docs ---
+# IMPORTANT: Do NOT ignore the entire toolchains/ tree. It contains:
+#   - type-support headers (src/**/*.h)
+#   - library generation scripts (*.sh)
+#   - CI workflows, colcon metas, patches, licenses, README docs
+# Ignore ONLY generated/binary content inside toolchains/:
+toolchains/**/build/
+toolchains/**/install/
+toolchains/**/log/
+toolchains/**/__pycache__/
+toolchains/**/*.pyc
+# --- Build-artifact staging dirs (pure binary outputs) ---
+build_artifacts/
+
+# --- IDE / editor / local ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- TRAE / local agent files (per-session) ---
+.trae/
+
+# --- Local env overrides (no credentials expected; safe ignore) ---
+.env
+.env.*
+!.env.example
+
+# --- ROS log default location if user overrides HOME ---
+.ros/
